@@ -1,6 +1,0 @@
-set.dir(input=data/mothur, output=data/mothur, seed=19760620)
-set.current(processors=8)
-remove.groups(count=stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table, fasta=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, taxonomy=stability.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.taxonomy, groups=Mock-Mock2)
-cluster.split(fasta=current, count=current, taxonomy=current, cutoff=0.03, taxlevel=4)
-make.shared(list=current, count=current, label=0.03)
-classify.otu(list=current, count=current, taxonomy=current, label=0.03)
