@@ -1,27 +1,14 @@
-#! /usr/bin/bash
-
-### PBS Preamble begin
-
-#PBS -N blast_all_rdrp_10_04_2019
-#PBS -l nodes=1:ppn=12
-#PBS -l mem=48gb
-#PBS -l walltime=36:00:00
-#PBS -A pschloss_fluxod
-#PBS -q fluxod
-#PBS -M andbeaud@umich.edu
-#PBS -m abe
-#PBS -j oe
-#PBS -V
-
-### Change to the directory you submitted from
-if [ -n "$PBS_O_WORKDIR" ]; then
-        cd $PBS_O_WORKDIR
-else
-    	PBS_O_WORKDIR=$(pwd)
-fi
-echo "Job working directory:"
-pwd
-echo
+#!/usr/bin/bash
+#SBATCH --job-name=blast_all_rdrp_10_04_2019
+#SBATCH --mail-user=jmastough@gmail.com
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --account=pschloss
+#SBATCH --partition=standard
+#SBATCH --time=24:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=12
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=48g
 
 ### Set up environment
 
