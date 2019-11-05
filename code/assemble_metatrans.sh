@@ -1,29 +1,30 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 
-### PBS Preamble begin
+####################################################################
+### This script assembles RNAseq reads into contigs and scaffolds  #
+# To run this script you must have SPAdes installed.               #
+####################################################################
 
-#PBS -N assemble_metatrans_6_26_2019
-#PBS -l nodes=1:largemem:ppn=40
-#PBS -l mem=900gb
-#PBS -l walltime=500:00:00
-#PBS -A pschloss_fluxod
-#PBS -q fluxod
-#PBS -M jmastough@gmail.com
-#PBS -m abe
-#PBS -j oe
-#PBS -V
 
-### Change to the directory you submitted from
-if [ -n "$PBS_O_WORKDIR" ]; then
-        cd $PBS_O_WORKDIR
+### This chunk checks for whether the assembly data directory exists
+# and creates it if it doesn't. This directory is necessary for the
+# trimming step in the code below.
+
+if [ -d "data/raw/assembly/ ]
+then
+    	echo "Assembly folder already exists, continuing..."
+        echo
 else
-    	PBS_O_WORKDIR=$(pwd)
+    	echo "Assembly folder doesn't exist, creating and continuing..."
+        echo
+	mkdir data/raw/assembly
 fi
-echo "Job working directory:"
-pwd
-echo
 
-### Create temporary directory, which is removed at end of run
+
+### This chunk creates a temporary directory for use by SPAdes during assembly 
+# and saves it in the $TEMP variable. The if statement exits the script with 
+# an error if the temp directory has not been successfully created.
+
 TEMP=$(mktemp -d)
 if [ $? -ne 0 ]
 then
@@ -31,18 +32,22 @@ then
         exit 1
 fi
 
-### Set up environment
 
-source activate mj_omics
-read_path="$HOME/mj_omics/data/process/trimmed_metatrans"
-contig_path="$HOME/mj_omics/data/process/metatrans_contigs"
+### This chunk iterates over a list of treatment groups contained in the
+# data/process/samples.tsv file and assembles their respective short
+# read sequence files using SPAdes in RNA mode with a maximum RAM limit
+# of 900GB with 32 threads which are then stored in separate directories
+# within data/raw/assembly/. The last line deletes the $TEMP directory
+# created above.
 
-### Assemble trimmed reads
+for treatment in $(awk '{ print $2 }' data/process/samples.tsv); do
 
-for file in $(cat ./data/process/trimmed_metatrans/samples.txt); do
-	mkdir "$contig_path"/"$file"
-	spades.py --rna -o "$contig_path"/"$file"/ -1 "$read_path"/"$file"_forward_paired.fastq -2 "$read_path"/"$file"_reverse_paired.fastq -s "$read_path"/"$file"_unpaired.fastq -t 40 -m 900 --tmp-dir $TEMP
+	mkdir data/raw/assembly/"$file"
+	spades.py --rna -o data/raw/assembly/"$file"/\ 
+		-1 data/raw/trimmed/"$file"_forward_paired.fastq\ 
+		-2 data/raw/trimmed/"$file"_reverse_paired.fastq\ 
+		-s data/raw/trimmed/"$file"_unpaired.fastq -t 32 -m 900 --tmp-dir $TEMP
+
 done
 
-### Clean up temp folder
 rm -rf $TEMP
