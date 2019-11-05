@@ -1,38 +1,43 @@
 #!/usr/bin/bash
 
-### PBS Preamble begin
+####################################################################
+### This script prepares raw short reads for assembly and mapping. #
+# To run this script you must have Trimmomatic installed.          #
+####################################################################
 
-#PBS -N trim_metatranscriptomes_5_29_2019
-#PBS -l nodes=1:ppn=12
-#PBS -l pmem=1gb
-#PBS -l walltime=48:00:00
-#PBS -A pschloss_fluxod
-#PBS -q fluxod
-#PBS -M jmastough@gmail.com
-#PBS -m abe
-#PBS -j oe
-#PBS -V
 
-### PBS Preamble End
+### This chunk checks for whether the trimmed data directory exists
+# and creates it if it doesn't. This directory is necessary for the
+# trimming step in the code below.
 
-### Change to the directory you submitted from
-if [ -n "$PBS_O_WORKDIR" ]; then
-        cd $PBS_O_WORKDIR
+if [ -d "data/raw/trimmed/ ]
+then
+	echo "Trimmed read folder already exists, continuing..."
+	echo
 else
-    	PBS_O_WORKDIR=$(pwd)
+	echo "Trimmed read folder doesn't exist, creating and continuing..."
+	echo
+	mkdir data/raw/trimmed
 fi
-echo "Job working directory:"
-pwd
-echo
 
-source activate mj_omics
+### This chunk loops through a list of sample names contained in
+# data/process/samples.tsv and uses Trimmomatic to trim low quality 
+# bases and adapter sequences from raw short read files. The loop
+# then concatenates unpaired reads produced by trimming into a
+# single unpaired read file.
 
-### Assemble trimmed reads
+for sample in $(awk '{ print $2 }' data/process/samples.tsv); do
 
-for sample in $(cat ./data/process/raw_unzipped_metatrans/samples.txt); do
-
-        trimmomatic PE -threads 12 data/process/raw_unzipped_metatrans/"$sample"_forward.fastq data/process/raw_unzipped_metatrans/"$sample"_reverse.fastq data/process/trimmed_metatrans/"$sample"_forward_paired.fastq data/process/trimmed_metatrans/"$sample"_forward_unpaired.fastq data/process/trimmed_metatrans/"$sample"_reverse_paired.fastq data/process/trimmed_metatrans/"$sample"_reverse_unpaired.fastq LEADING:10 TRAILING:15 SLIDINGWINDOW:4:15 MINLEN:50 ILLUMINACLIP:data/references/TruSeq3-PE.fa:2:30:10
-	cat data/process/trimmed_metatrans/"$sample"_forward_unpaired.fastq data/process/trimmed_metatrans/"$sample"_reverse_unpaired.fastq > data/process/trimmed_metatrans/"$sample"_unpaired.fastq
+        trimmomatic PE -threads 12 data/raw/raw/"$sample"_forward.fastq\ 
+		data/raw/raw/"$sample"_reverse.fastq\ 
+		data/raw/trimmed/"$sample"_forward_paired.fastq\ 
+		data/raw/trimmed/"$sample"_forward_unpaired.fastq\ 
+		data/raw/trimmed/"$sample"_reverse_paired.fastq\ 
+		data/raw/trimmed/"$sample"_reverse_unpaired.fastq\ 
+		LEADING:10 TRAILING:15 SLIDINGWINDOW:4:15 MINLEN:50\ 
+		ILLUMINACLIP:data/references/TruSeq3-PE.fa:2:30:10
+	cat data/raw/trimmed/"$sample"_forward_unpaired.fastq data/raw/trimmed/"$sample"_reverse_unpaired.fastq > data/raw/trimmed/"$sample"_unpaired.fastq
+	rm data/raw/trimmed/"$sample"_forward_unpaired.fastq data/raw/trimmed/"$samples_reverse_unpaired.fastq
 
 done
 
