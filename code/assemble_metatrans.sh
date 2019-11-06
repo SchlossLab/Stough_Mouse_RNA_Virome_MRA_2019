@@ -10,7 +10,7 @@
 # and creates it if it doesn't. This directory is necessary for the
 # trimming step in the code below.
 
-if [ -d "data/raw/assembly/ ]
+if [ -d "data/raw/assembly/" ]
 then
     	echo "Assembly folder already exists, continuing..."
         echo
@@ -42,11 +42,8 @@ fi
 
 for treatment in $(awk '{ print $2 }' data/process/samples.tsv); do
 
-	mkdir data/raw/assembly/"$file"
-	spades.py --rna -o data/raw/assembly/"$file"/\ 
-		-1 data/raw/trimmed/"$file"_forward_paired.fastq\ 
-		-2 data/raw/trimmed/"$file"_reverse_paired.fastq\ 
-		-s data/raw/trimmed/"$file"_unpaired.fastq -t 32 -m 900 --tmp-dir $TEMP
+	mkdir data/raw/assembly/"$treatment"
+	spades.py --rna -o data/raw/assembly/"$treatment"/ -1 data/raw/trimmed/"$treatment"_forward_paired.fastq -2 data/raw/trimmed/"$treatment"_reverse_paired.fastq -s data/raw/trimmed/"$treatment"_unpaired.fastq -t 32 -m 900 --tmp-dir $TEMP
 
 done
 
