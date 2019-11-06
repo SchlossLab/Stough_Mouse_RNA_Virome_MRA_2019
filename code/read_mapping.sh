@@ -1,37 +1,16 @@
 #!/usr/bin/bash
 
-### PBS Preamble begin
+###########################################################################
+# This script processes assembled scaffolds, adding treatment groups to   #
+# fasta sequence headers, removing short contigs, removing line breaks    #
+# from fasta sequences, checks for circular contigs, and maps trimmed     #
+# RNAseq short reads to scaffolds for quantification of relative          #
+# abundance.                                                              #
+# Working installations of Bowtie2, BBMap, and CContigs is required to    #
+# to run this script.                                                     #
+###########################################################################
 
-#PBS -N metatrans_read_mapping_10_8_19
-#PBS -l nodes=1:ppn=12
-#PBS -l mem=48gb
-#PBS -l walltime=36:00:00
-#PBS -A pschloss_fluxod
-#PBS -q fluxod
-#PBS -M andbeaud@umich.edu
-#PBS -m abe
-#PBS -j oe
-#PBS -V
-
-### PBS Preamble end
-
-### Change to the directory you submitted from
-if [ -n "$PBS_O_WORKDIR" ]; then
-        cd $PBS_O_WORKDIR
-else
-    	PBS_O_WORKDIR=$(pwd)
-fi
-echo "Job working directory:"
-pwd
-echo
-
-
-### Setup Environment
-
-scaffold_path="/nfs/turbo/schloss-lab/jmastough/mj_omics/data/process/scaffolds/metatrans"
-source activate mj_omics
-
-### Remove old temp files
+### This chunk 
 
 if [ -e $scaffold_path/all_raw_scaffolds.fasta ]
 then
@@ -58,21 +37,25 @@ done
 
 ### Remove contigs under 1000 bases
 
-#echo "Removing contigs under 1000 bases"
-#echo
+echo "Removing contigs under 1000 bases"
+echo
 
-#reformat.sh minlength=1000 overwrite=t in="$scaffold_path"/all_raw_scaffolds.fasta out="$scaffold_path"/all_scaffolds.fasta
+reformat.sh minlength=1000 overwrite=t in="$scaffold_path"/all_raw_scaffolds.fasta out="$scaffold_path"/all_long_scaffolds.fasta
 
 
 ### Create temporary contig file and remove line breaks from the sequences
 
-#echo "Creating temporary contig file and removing line breaks from the sequences"
-#echo
-#awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' "$scaffold_path"/all_scaffolds.fasta > "$scaffold_path"/all_temp_scaffolds.fasta
+echo "Creating temporary contig file and removing line breaks from the sequences"
+echo
+awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' "$scaffold_path"/all_long_scaffolds.fasta > "$scaffold_path"/all_scaffolds.fasta
+
+### Search for Circular Contigs
+
+julia ccontigs.jl -i "$scaffold_path"/all_scaffolds.fasta -o "$cir_contig_path"/ccontigs_vlp_out.tsv
 
 ### Build Bowtie index files
 
-bowtie2-build "$scaffold_path"/all_raw_scaffolds.fasta data/references/metatrans_index/all_scaffolds 
+bowtie2-build "$scaffold_path"/all_scaffolds.fasta data/references/metatrans_index/all_scaffolds 
 
 ### Run Read mappings, convert to BAM format, and sort
 
