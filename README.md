@@ -1,9 +1,6 @@
-Download the [latest release](https://github.com/SchlossLab/new_project/releases/latest) to the directory and decompress
+## Mouse gut RNA virus genomes assembled from metatranscriptomes
 
-
-## TITLE OF YOUR PAPER GOES HERE
-
-YOUR PAPER'S ABSTRACT GOES HERE
+wut wut
 
 
 
@@ -49,17 +46,22 @@ YOUR PAPER'S ABSTRACT GOES HERE
 
 #### Dependencies and locations
 * Gnu Make should be located in the user's PATH
-* mothur (v1.XX.0) should be located in the user's PATH
 * R (v. 3.X.X) should be located in the user's PATH
 * R packages:
   * `knitr`
   * `rmarkdown`
-* etc
-
+* SPAdes v3.13.1
+* Trimmomatic v0.39
+* Bowtie 2 v2.3.4.3
+* ccontigs
+* BBMap v36.68
+* NCBI blast v2.9.0
+* SRA toolkit v2.9.6
+* Prodigal v2.6.3
 
 #### Running analysis
 
 ```
-git clone https://github.com/SchlossLab/LastName_BriefDescription_Journal_Year.git
+git clone https://github.com/JMAStough/Stough_Mouse_RNA_Virome_MRA_2019.git
 make write.paper
 ```
