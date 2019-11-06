@@ -29,17 +29,18 @@ fi
 
 for accession in $(awk '{ print $1 }' data/process/samples.tsv); do
 
-	for treatment in $(awk '{ print $2 }' data/process/samples.tsv); do
-
-		echo "Downloading $accession ..."
-		echo
-		fasterq-dump --split-3 -o data/raw/raw/"$treatment" "$accession"
-		echo
-		echo "Renaming $accession.fastq to $treatment.fastq"
-		echo
-		mv data/raw/raw/"$treatment"_1.fastq data/raw/raw/"$treatment"_forward.fastq
-		mv data/raw/raw/"$treatment"_2.fastq data/raw/raw/"$treatment"_reverse.fastq
-
-	done
+	echo "Downloading $accession ..."
+	echo
+	fasterq-dump --split-3 -O data/raw/raw/ "$accession"
+	mv data/raw/raw/"$accession"_1.fastq data/raw/raw/"$accession"_forward.fastq
+	mv data/raw/raw/"$accession"_2.fastq data/raw/raw/"$accession"_reverse.fastq
 
 done
+
+rename SRR5124216_ germ_free_ data/raw/raw/*.fastq
+rename SRR5124214_ streptomycin_630_ data/raw/raw/*.fastq
+rename SRR5124213_ clindamycin_630_ data/raw/raw/*.fastq
+rename SRR5124212_ cefoperazone_630_ data/raw/raw/*.fastq
+rename SRR6216945_ streptomycin_mock_ data/raw/raw/*.fastq
+rename SRR6216939_ clindamycin_mock_ data/raw/raw/*.fastq
+rename SRR6216941_ cefoperazone_mock_ data/raw/raw/*.fastq
