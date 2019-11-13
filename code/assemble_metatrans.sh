@@ -43,7 +43,7 @@ fi
 for treatment in $(awk '{ print $2 }' data/process/samples.tsv); do
 
 	mkdir data/raw/assembly/"$treatment"
-	spades.py --rna -o data/raw/assembly/"$treatment"/ -1 data/raw/trimmed/"$treatment"_forward_paired.fastq -2 data/raw/trimmed/"$treatment"_reverse_paired.fastq -s data/raw/trimmed/"$treatment"_unpaired.fastq -t 32 -m 900 --tmp-dir $TEMP
+	spades.py --rna -o data/raw/assembly/"$treatment"/ -1 data/raw/trimmed/"$treatment"_forward_paired.fastq -2 data/raw/trimmed/"$treatment"_reverse_paired.fastq -s data/raw/trimmed/"$treatment"_unpaired.fastq -t 32 -m 180 --tmp-dir $TEMP
 
 done
 
