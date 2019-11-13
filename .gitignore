@@ -9,6 +9,7 @@ code/slurm/*
 data/*/*
 !data/process/*
 !data/references/*
+data/references/index/
 !README.md
 
 slurm*
