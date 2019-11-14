@@ -1,29 +1,37 @@
 #!/usr/bin/bash
-#SBATCH --job-name=blast_all_rdrp_10_04_2019
-#SBATCH --mail-user=jmastough@gmail.com
-#SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --account=pschloss
-#SBATCH --partition=standard
-#SBATCH --time=24:00:00
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=12
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=48g
 
-### Set up environment
+###########################################################################
+# This script uses blastx to screen scaffolds produced during assembly    #
+# against a database of RefSeq RNA-dependent RNA Polymerase protein       #
+# sequences.                                                              #
+# A working installation of NCBI BLAST+ is required to to run this script.#
+###########################################################################
 
-source activate mj_omics
-ref_path="data"
+### This chunk checks for whether the blasts directory exists
+# and creates it if it doesn't. This directory is necessary for the
+# steps in the code below.
 
-### Build marker gene databases
+if [ -d "data/process/blasts/" ]
+then
+    	echo "Blasts folder already exists, continuing..."
+        echo
+else
+    	echo "Blasts folder doesn't exist, creating and continuing..."
+        echo
+	mkdir data/process/blasts
+fi
 
-# Bacteriocin database
-makeblastdb -in "$ref_path"/references/blast_refs/all_rdrp.fasta -dbtype prot -title all_rdrp -out "$ref_path"/references/blast_refs/all_rdrp
 
-### Define a function that blasts orf translations against marker gene databases
+### This chunk uses makeblastdb from the BLAST+ software suite to build
+# a blast database from the all_rdrp.fasta file containing RefSeq
+# RdRP protein sequences and deposits it in the data/references directory
 
-for treatment in $(ls data/process/metatrans_contigs); do
+makeblastdb -in data/references/all_rdrp.fasta -dbtype prot -title all_rdrp -out data/references/all_rdrp
 
-	blastx -query data/process/scaffolds/metatrans_scaffolds/"$treatment"_transcripts.fasta -query_gencode 11 -db "$ref_path"/references/blast_refs/all_rdrp -evalue 1e-20 -out data/process/blasts/all_rdrp/"$treatment"_blasts.tsv -outfmt 6 
 
-done
+### This chunk blasts processed scaffolds against the RdRP database
+# produced above and deposts the results in tsv format in the 
+# data/process/blasts/ directory.
+
+blastx -query data/raw/scaffolds/all_scaffolds.fasta -query_gencode 11 -db data/references/all_rdrp -evalue 1e-20 -out data/process/blasts/rdrp_blasts.tsv -outfmt 6 
+
