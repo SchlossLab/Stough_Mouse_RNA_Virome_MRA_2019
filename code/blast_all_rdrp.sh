@@ -11,14 +11,14 @@
 # and creates it if it doesn't. This directory is necessary for the
 # steps in the code below.
 
-if [ -d "data/process/blasts/" ]
+if [ -d "data/raw/blasts/" ]
 then
     	echo "Blasts folder already exists, continuing..."
         echo
 else
     	echo "Blasts folder doesn't exist, creating and continuing..."
         echo
-	mkdir data/process/blasts
+	mkdir data/raw/blasts
 fi
 
 
@@ -33,5 +33,5 @@ makeblastdb -in data/references/all_rdrp.fasta -dbtype prot -title all_rdrp -out
 # produced above and deposts the results in tsv format in the 
 # data/process/blasts/ directory.
 
-blastx -query data/raw/scaffolds/all_scaffolds.fasta -query_gencode 11 -db data/references/all_rdrp -evalue 1e-20 -out data/process/blasts/rdrp_blasts.tsv -outfmt 6 
+blastx -query data/raw/scaffolds/all_scaffolds.fasta -query_gencode 11 -db data/references/all_rdrp -evalue 1e-20 -out data/raw/blasts/rdrp_blasts.tsv -outfmt 6 
 

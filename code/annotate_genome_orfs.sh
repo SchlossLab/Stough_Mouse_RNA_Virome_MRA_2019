@@ -80,7 +80,7 @@ else
     	echo "No old contig files to delete"
 fi
 
-for hit in $(awk '{ print $1 }' data/process/blasts/rdrp_blasts.tsv | uniq); do
+for hit in $(awk '{ print $1 }' data/raw/blasts/rdrp_blasts.tsv | uniq); do
 
 	grep -A 1 "$hit" data/raw/scaffolds/all_scaffolds.fasta >> data/raw/genome_candidates/genomes/rdrp_hits.fasta
 
