@@ -35,19 +35,14 @@ cat $mito_ref_file $contig_file > $tree_path/mito_rdrp_seqs.fasta
 mafft --globalpair --maxiterate 1000 $tree_path/mito_rdrp_seqs.fasta > $tree_path/mito_rdrp_aligned.fasta
 
 
-### Archive and shorten reference fasta headers for phylip conversion
-
-
-
-
 ### Alignment trimming
 
-trimal -in $tree_path/mito_rdrp_aligned.fasta -phylip -gt 0.5
+trimal -in $tree_path/mito_rdrp_aligned.fasta -out $tree_path/mito_rdrp_aligned_nogaps.fasta -gt 0.5
 
 
 ### Make Tree
 
-
+iqtree -s $tree_path/mito_rdrp_aligned_nogaps.fasta -pre mito_tree -st AA -m MFP -bb 1000 -nt 12
 
 ### Edit tree
 
