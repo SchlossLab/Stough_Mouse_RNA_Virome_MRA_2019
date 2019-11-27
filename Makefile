@@ -27,24 +27,6 @@ print-%:
 #
 ################################################################################
 
-# We want the latest greatest reference alignment and the SILVA reference
-# alignment is the best reference alignment on the market. This version is from
-# 132 and described at http://blog.mothur.org/2018/01/10/SILVA-v132-reference-files/
-# We will use the SEED v. 132, which contain 12,083 bacterial sequences. This
-# also contains the reference taxonomy. We will limit the databases to only
-# include bacterial sequences.
-
-$(REFS)/silva.seed.align :
-	wget -N https://mothur.org/w/images/7/71/Silva.seed_v132.tgz
-	tar xvzf Silva.seed_v132.tgz silva.seed_v132.align silva.seed_v132.tax
-	mothur "#get.lineage(fasta=silva.seed_v132.align, taxonomy=silva.seed_v132.tax, taxon=Bacteria);degap.seqs(fasta=silva.seed_v132.pick.align, processors=8)"
-	mv silva.seed_v132.pick.align $(REFS)/silva.seed.align
-	rm Silva.seed_v132.tgz silva.seed_v132.*
-
-$(REFS)/silva.v4.align : $(REFS)/silva.seed.align
-	mothur "#pcr.seqs(fasta=$(REFS)/silva.seed.align, start=11894, end=25319, keepdots=F, processors=8)"
-	mv $(REFS)/silva.seed.pcr.align $(REFS)/silva.v4.align
-
 # Next, we want the RDP reference taxonomy. The current version is v10 and we
 # use a "special" pds version of the database files, which are described at
 # http://blog.mothur.org/2017/03/15/RDP-v16-reference_files/

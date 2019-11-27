@@ -2,8 +2,9 @@
 
 ###########################################################################
 # This script processes assembled scaffolds, adding treatment groups to   #
-# fasta sequence headers, removing short contigs, removing line breaks    #
-# from fasta sequences, checks for circular contigs.                      #
+# fasta sequence headers, removing short contigs, removing duplicate      #
+# contigs, removing line breaks from fasta sequences, and shortening      #
+# fasta headers in the final scaffold file.                               #
 # Working installations of BBMap and CContigs is required to              #
 # to run this script.                                                     #
 ###########################################################################
@@ -44,13 +45,23 @@ echo "Removing line breaks from the scaffold sequences and creating whole scaffo
 echo
 awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' data/raw/scaffolds/all_long_scaffolds.fasta > data/raw/scaffolds/all_temp_scaffolds.fasta
 
-### This chunk shortens the contig names
 
-sed -i 's/>cefoperazone_630_/>cef630_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
-sed -i 's/>cefoperazone_mock_/>cefmock_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
-sed -i 's/>clindamycin_630_/>clin630_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
-sed -i 's/>clindamycin_mock_/>clinmock_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
-sed -i 's/>streptomycin_630_/>strep630_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
-sed -i 's/>streptomycin_mock_/>strepmock_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
-sed -i 's/>germ_free_/>gf_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
-cut -d '_' -f 1,2,3 data/raw/scaffolds/all_temp_scaffolds.fasta > data/raw/scaffolds/all_scaffolds.fasta
+### This chunk uses BBMap function dedupe.sh to remove duplicate contigs 
+# assembled in different treatment groups, then deletes the temporary file.
+
+dedupe.sh in=data/raw/scaffolds/all_temp_scaffolds.fasta out=data/raw/scaffolds/all_scaffolds_nodupes.fasta outd=data/raw/scaffolds/duplicates.fasta
+
+rm data/raw/scaffolds/all_long_scaffolds.fasta data/raw/scaffolds/all_temp_scaffolds.fasta
+
+### This chunk shortens the contig names using sed to replace the treatment
+# group names with shorter versions, and cut to remove all contig stats
+# except the id number
+
+sed -i 's/>cefoperazone_630_/>cef630_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
+sed -i 's/>cefoperazone_mock_/>cefmock_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
+sed -i 's/>clindamycin_630_/>clin630_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
+sed -i 's/>clindamycin_mock_/>clinmock_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
+sed -i 's/>streptomycin_630_/>strep630_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
+sed -i 's/>streptomycin_mock_/>strepmock_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
+sed -i 's/>germ_free_/>gf_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
+cut -d '_' -f 1,2,3 data/raw/scaffolds/all_scaffolds_nodupes.fasta > data/raw/scaffolds/all_scaffolds.fasta

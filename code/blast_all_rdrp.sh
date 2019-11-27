@@ -26,12 +26,12 @@ fi
 # a blast database from the all_rdrp.fasta file containing RefSeq
 # RdRP protein sequences and deposits it in the data/references directory
 
-makeblastdb -in data/references/all_rdrp.fasta -dbtype prot -title all_rdrp -out data/references/all_rdrp
+makeblastdb -in data/references/rdrp_bait.fasta -dbtype prot -title all_rdrp -out data/references/blast_refs/all_rdrp
 
 
 ### This chunk blasts processed scaffolds against the RdRP database
 # produced above and deposts the results in tsv format in the 
 # data/process/blasts/ directory.
 
-blastx -query data/raw/scaffolds/all_scaffolds.fasta -query_gencode 11 -db data/references/all_rdrp -evalue 1e-20 -out data/raw/blasts/rdrp_blasts.tsv -outfmt 6 
+blastx -query data/raw/scaffolds/all_scaffolds.fasta -query_gencode 1 -db data/references/blast_refs/all_rdrp -evalue 1e-20 -out data/raw/blasts/rdrp_blasts.tsv -outfmt 6 
 
