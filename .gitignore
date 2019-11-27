@@ -10,7 +10,8 @@ data/*/*
 !data/process/*
 !data/references/*
 data/references/index/
-data/references/*.p*
+data/references/sortmerna*
+data/references/blast_refs
 !README.md
 
 slurm*
