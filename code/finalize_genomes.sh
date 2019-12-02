@@ -71,7 +71,7 @@ for group in astrovirus mitovirus; do
 
 	for genome in $(ls "$gen_dir"/"$group"/fasta/ | cut -d '.' -f 1); do
 
-		prodigal -a $gen_dir/"$group"/orfs/"$genome"_orf_translations.fasta -c -d $gen_dir/"$group"/orfs/"$genome"_orf_nucleotides.fasta -f gff -g 1 -i "$gen_dir"/"$group"/fasta/"$genome".fasta -m -o "$gen_dir"/"$group"/orfs/"$genome"_orfs.gff -p meta
+		prodigal -a $gen_dir/"$group"/orfs/"$genome"_orf_translations.fasta -c -d $gen_dir/"$group"/orfs/"$genome"_orf_nucleotides.fasta -f sco -g 1 -i "$gen_dir"/"$group"/fasta/"$genome".fasta -m -o "$gen_dir"/"$group"/orfs/"$genome"_orfs.sco -p meta
 		sed -i 's/*//g' "$gen_dir/"$group"/orfs/$genome"_orf_translations.fasta
 		interproscan.sh -dp -b "$gen_dir"/"$group"/annotations/"$genome"_annotations -cpu 12 -f tsv -i "$gen_dir"/"$group"/orfs/"$genome"_orf_translations.fasta -t p -ms 50
 
