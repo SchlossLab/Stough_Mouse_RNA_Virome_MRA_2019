@@ -1,0 +1,11 @@
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	Pfam	PF02123	Viral RNA-directed RNA-polymerase	2	217	2.2E-53	T	02-12-2019	IPR001795	RNA-directed RNA polymerase, luteovirus
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	MobiDBLite	mobidb-lite	consensus disorder prediction	264	291	-	T	02-12-2019
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	SUPERFAMILY	SSF56672		2	250	1.04E-41	T	02-12-2019
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	PRINTS	PR00914	Luteovirus (ORF3) RNA-directed RNA-polymerase signature	21	45	9.1E-53	T	02-12-2019	IPR001795	RNA-directed RNA polymerase, luteovirus
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	PRINTS	PR00914	Luteovirus (ORF3) RNA-directed RNA-polymerase signature	115	135	9.1E-53	T	02-12-2019	IPR001795	RNA-directed RNA polymerase, luteovirus
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	PRINTS	PR00914	Luteovirus (ORF3) RNA-directed RNA-polymerase signature	72	92	9.1E-53	T	02-12-2019	IPR001795	RNA-directed RNA polymerase, luteovirus
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	PRINTS	PR00914	Luteovirus (ORF3) RNA-directed RNA-polymerase signature	160	172	9.1E-53	T	02-12-2019	IPR001795	RNA-directed RNA polymerase, luteovirus
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	PRINTS	PR00914	Luteovirus (ORF3) RNA-directed RNA-polymerase signature	203	218	9.1E-53	T	02-12-2019	IPR001795	RNA-directed RNA polymerase, luteovirus
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	PRINTS	PR00914	Luteovirus (ORF3) RNA-directed RNA-polymerase signature	143	160	9.1E-53	T	02-12-2019	IPR001795	RNA-directed RNA polymerase, luteovirus
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	MobiDBLite	mobidb-lite	consensus disorder prediction	264	300	-	T	02-12-2019
+strepmock_NODE_9060_1	4d078c3385f1347b959e3365ecc3cfbd	324	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	66	180	8.768	T	02-12-2019	IPR007094	RNA-directed RNA polymerase,  catalytic domain

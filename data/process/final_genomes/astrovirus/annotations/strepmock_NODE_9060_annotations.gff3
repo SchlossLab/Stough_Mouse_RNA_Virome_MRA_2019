@@ -1,0 +1,54 @@
+##gff-version 3
+##feature-ontology http://song.cvs.sourceforge.net/viewvc/song/ontology/sofa.obo?revision=1.269
+##interproscan-version 5.39-77.0
+##sequence-region strepmock_NODE_9060_1 1 324
+strepmock_NODE_9060_1	.	polypeptide	1	324	.	+	.	ID=strepmock_NODE_9060_1;md5=4d078c3385f1347b959e3365ecc3cfbd
+strepmock_NODE_9060_1	Pfam	protein_match	2	217	2.2E-53	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 2 217;ID=match$1_2_217;signature_desc=Viral RNA-directed RNA-polymerase;Name=PF02123;status=T;Dbxref="InterPro:IPR001795"
+strepmock_NODE_9060_1	MobiDBLite	protein_match	264	291	.	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 264 291;ID=match$2_264_291;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+strepmock_NODE_9060_1	SUPERFAMILY	protein_match	2	250	1.04E-41	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 2 250;ID=match$3_2_250;Name=SSF56672;status=T
+strepmock_NODE_9060_1	PRINTS	protein_match	21	45	9.1E-53	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 21 45;ID=match$4_21_45;signature_desc=Luteovirus (ORF3) RNA-directed RNA-polymerase signature;Name=PR00914;status=T;Dbxref="InterPro:IPR001795"
+strepmock_NODE_9060_1	PRINTS	protein_match	115	135	9.1E-53	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 115 135;ID=match$4_115_135;signature_desc=Luteovirus (ORF3) RNA-directed RNA-polymerase signature;Name=PR00914;status=T;Dbxref="InterPro:IPR001795"
+strepmock_NODE_9060_1	PRINTS	protein_match	72	92	9.1E-53	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 72 92;ID=match$4_72_92;signature_desc=Luteovirus (ORF3) RNA-directed RNA-polymerase signature;Name=PR00914;status=T;Dbxref="InterPro:IPR001795"
+strepmock_NODE_9060_1	PRINTS	protein_match	160	172	9.1E-53	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 160 172;ID=match$4_160_172;signature_desc=Luteovirus (ORF3) RNA-directed RNA-polymerase signature;Name=PR00914;status=T;Dbxref="InterPro:IPR001795"
+strepmock_NODE_9060_1	PRINTS	protein_match	203	218	9.1E-53	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 203 218;ID=match$4_203_218;signature_desc=Luteovirus (ORF3) RNA-directed RNA-polymerase signature;Name=PR00914;status=T;Dbxref="InterPro:IPR001795"
+strepmock_NODE_9060_1	PRINTS	protein_match	143	160	9.1E-53	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 143 160;ID=match$4_143_160;signature_desc=Luteovirus (ORF3) RNA-directed RNA-polymerase signature;Name=PR00914;status=T;Dbxref="InterPro:IPR001795"
+strepmock_NODE_9060_1	MobiDBLite	protein_match	264	300	.	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 264 300;ID=match$5_264_300;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+strepmock_NODE_9060_1	ProSiteProfiles	protein_match	66	180	8.768	+	.	date=01-12-2019;Target=strepmock_NODE_9060_1 66 180;ID=match$6_66_180;signature_desc=RdRp of positive ssRNA viruses catalytic domain profile.;Name=PS50507;status=T;Dbxref="InterPro:IPR007094"
+##FASTA
+>strepmock_NODE_9060_1
+MREGRFRLISSVSLVDQLVERLLFGPQNKAEIALWQSVPSKPGMGLSQKWQFEALWKDLQ
+IKHASAPAAEADISGFDWSVQKWELEADVCMRIERGNFPARMRKAALNRFKCFANAVFQL
+SNGELIEQGLPGLMKSGSYCTSSTNSRIRCLMAEIIQAPWCIAMGDDSVEGYVEGARELY
+GELGHTCKDYIPCAAEGEILKEVNFCSHSIAADRCYLQSWAKTLFRYLEHPDDFEELAVE
+LQGCPQWPRIYKYLRRIGRVSDKIPEPREENGREDEKSKQKEEEKQQRTEEDYGTQQAAS
+YCTEGYDPSRYFGGGEEVFPCNPL
+>match$1_2_217
+REGRFRLISSVSLVDQLVERLLFGPQNKAEIALWQSVPSKPGMGLSQKWQFEALWKDLQI
+KHASAPAAEADISGFDWSVQKWELEADVCMRIERGNFPARMRKAALNRFKCFANAVFQLS
+NGELIEQGLPGLMKSGSYCTSSTNSRIRCLMAEIIQAPWCIAMGDDSVEGYVEGARELYG
+ELGHTCKDYIPCAAEGEILKEVNFCSHSIAADRCYL
+>match$2_264_291
+IPEPREENGREDEKSKQKEEEKQQRTEE
+>match$3_2_250
+REGRFRLISSVSLVDQLVERLLFGPQNKAEIALWQSVPSKPGMGLSQKWQFEALWKDLQI
+KHASAPAAEADISGFDWSVQKWELEADVCMRIERGNFPARMRKAALNRFKCFANAVFQLS
+NGELIEQGLPGLMKSGSYCTSSTNSRIRCLMAEIIQAPWCIAMGDDSVEGYVEGARELYG
+ELGHTCKDYIPCAAEGEILKEVNFCSHSIAADRCYLQSWAKTLFRYLEHPDDFEELAVEL
+QGCPQWPRI
+>match$4_21_45
+RLLFGPQNKAEIALWQSVPSKPGMG
+>match$4_72_92
+DISGFDWSVQKWELEADVCMR
+>match$4_115_135
+NAVFQLSNGELIEQGLPGLMK
+>match$4_143_160
+STNSRIRCLMAEIIQAPW
+>match$4_160_172
+WCIAMGDDSVEGY
+>match$4_203_218
+VNFCSHSIAADRCYLQ
+>match$5_264_300
+IPEPREENGREDEKSKQKEEEKQQRTEEDYGTQQAAS
+>match$6_66_180
+APAAEADISGFDWSVQKWELEADVCMRIERGNFPARMRKAALNRFKCFANAVFQLSNGEL
+IEQGLPGLMKSGSYCTSSTNSRIRCLMAEIIQAPWCIAMGDDSVEGYVEGARELY

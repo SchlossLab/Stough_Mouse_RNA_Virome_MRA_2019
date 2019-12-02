@@ -1,0 +1,4 @@
+gf_NODE_1298_1	cd5b90c9401e3cc2b0cc5d278ad72c42	677	Pfam	PF05919	Mitovirus RNA-dependent RNA polymerase	219	465	9.4E-38	T	02-12-2019	IPR008686	RNA-dependent RNA polymerase, mitoviral
+gf_NODE_1298_1	cd5b90c9401e3cc2b0cc5d278ad72c42	677	SUPERFAMILY	SSF56672		275	493	3.47E-10	T	02-12-2019
+gf_NODE_1298_1	cd5b90c9401e3cc2b0cc5d278ad72c42	677	MobiDBLite	mobidb-lite	consensus disorder prediction	650	677	-	T	02-12-2019
+gf_NODE_1298_1	cd5b90c9401e3cc2b0cc5d278ad72c42	677	PANTHER	PTHR34456		332	465	7.3E-13	T	02-12-2019	IPR008686	RNA-dependent RNA polymerase, mitoviral

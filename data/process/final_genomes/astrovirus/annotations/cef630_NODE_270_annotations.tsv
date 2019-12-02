@@ -1,0 +1,20 @@
+cef630_NODE_270_2	4b78f68978e062d1dea66020da8de2ca	441	SUPERFAMILY	SSF56672		7	420	8.9E-58	T	02-12-2019
+cef630_NODE_270_2	4b78f68978e062d1dea66020da8de2ca	441	Pfam	PF00680	RNA dependent RNA polymerase	100	329	1.4E-14	T	02-12-2019	IPR001205	RNA-directed RNA polymerase,  C-terminal domain
+cef630_NODE_270_2	4b78f68978e062d1dea66020da8de2ca	441	Gene3D	G3DSA:3.30.70.270		228	339	6.1E-7	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	Coils	Coil		112	132	-	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	Pfam	PF13365	Trypsin-like peptidase domain	464	583	4.0E-8	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	Gene3D	G3DSA:2.40.10.10		530	604	2.7E-24	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	Coils	Coil		612	632	-	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	MobiDBLite	mobidb-lite	consensus disorder prediction	898	927	-	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	MobiDBLite	mobidb-lite	consensus disorder prediction	725	749	-	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	Gene3D	G3DSA:2.40.10.10		449	514	4.2E-27	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	SUPERFAMILY	SSF50494		458	593	1.25E-17	T	02-12-2019	IPR009003	Peptidase S1, PA clan
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	MobiDBLite	mobidb-lite	consensus disorder prediction	912	927	-	T	02-12-2019
+cef630_NODE_270_3	a0bc68d0bf5b01322ecd0d961bb3dba0	927	MobiDBLite	mobidb-lite	consensus disorder prediction	727	743	-	T	02-12-2019
+cef630_NODE_270_1	5f01bcb439f6a32f22056c6fb076a22d	818	MobiDBLite	mobidb-lite	consensus disorder prediction	40	55	-	T	02-12-2019
+cef630_NODE_270_1	5f01bcb439f6a32f22056c6fb076a22d	818	MobiDBLite	mobidb-lite	consensus disorder prediction	1	77	-	T	02-12-2019
+cef630_NODE_270_1	5f01bcb439f6a32f22056c6fb076a22d	818	MobiDBLite	mobidb-lite	consensus disorder prediction	1	25	-	T	02-12-2019
+cef630_NODE_270_1	5f01bcb439f6a32f22056c6fb076a22d	818	Pfam	PF03115	Astrovirus capsid protein precursor	47	389	8.9E-76	T	02-12-2019	IPR004337	Capsid, astroviral
+cef630_NODE_270_1	5f01bcb439f6a32f22056c6fb076a22d	818	MobiDBLite	mobidb-lite	consensus disorder prediction	691	720	-	T	02-12-2019
+cef630_NODE_270_1	5f01bcb439f6a32f22056c6fb076a22d	818	MobiDBLite	mobidb-lite	consensus disorder prediction	700	720	-	T	02-12-2019
+cef630_NODE_270_1	5f01bcb439f6a32f22056c6fb076a22d	818	Gene3D	G3DSA:2.60.120.20		77	262	9.2E-43	T	02-12-2019	IPR029053	Viral coat protein subunit

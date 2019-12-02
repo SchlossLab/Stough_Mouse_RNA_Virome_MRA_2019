@@ -1,0 +1,4 @@
+cefmock_NODE_3040_1	4c004dd00e63c1600b4d4d26e02785b8	677	PANTHER	PTHR34456		332	465	7.7E-13	T	02-12-2019	IPR008686	RNA-dependent RNA polymerase, mitoviral
+cefmock_NODE_3040_1	4c004dd00e63c1600b4d4d26e02785b8	677	SUPERFAMILY	SSF56672		262	488	3.11E-10	T	02-12-2019
+cefmock_NODE_3040_1	4c004dd00e63c1600b4d4d26e02785b8	677	MobiDBLite	mobidb-lite	consensus disorder prediction	650	677	-	T	02-12-2019
+cefmock_NODE_3040_1	4c004dd00e63c1600b4d4d26e02785b8	677	Pfam	PF05919	Mitovirus RNA-dependent RNA polymerase	219	465	8.3E-38	T	02-12-2019	IPR008686	RNA-dependent RNA polymerase, mitoviral

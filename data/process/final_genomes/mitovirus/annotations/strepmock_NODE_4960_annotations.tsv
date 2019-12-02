@@ -1,0 +1,4 @@
+strepmock_NODE_4960_1	09bd4ebbd636b1172fd66573d352c064	677	Pfam	PF05919	Mitovirus RNA-dependent RNA polymerase	219	465	9.4E-38	T	02-12-2019	IPR008686	RNA-dependent RNA polymerase, mitoviral
+strepmock_NODE_4960_1	09bd4ebbd636b1172fd66573d352c064	677	PANTHER	PTHR34456		332	465	7.6E-13	T	02-12-2019	IPR008686	RNA-dependent RNA polymerase, mitoviral
+strepmock_NODE_4960_1	09bd4ebbd636b1172fd66573d352c064	677	SUPERFAMILY	SSF56672		275	493	3.47E-10	T	02-12-2019
+strepmock_NODE_4960_1	09bd4ebbd636b1172fd66573d352c064	677	MobiDBLite	mobidb-lite	consensus disorder prediction	649	677	-	T	02-12-2019

@@ -1,0 +1,5 @@
+cefmock_NODE_2757_1	7e3b50b66055097ef80198fda46fa31d	739	SUPERFAMILY	SSF56672		154	572	1.33E-58	T	02-12-2019
+cefmock_NODE_2757_1	7e3b50b66055097ef80198fda46fa31d	739	Pfam	PF04522	Protein of unknown function (DUF585)	1	153	2.3E-106	T	02-12-2019	IPR007610	Broad bean mottle virus, Gp1, N-terminal
+cefmock_NODE_2757_1	7e3b50b66055097ef80198fda46fa31d	739	Pfam	PF00978	RNA dependent RNA polymerase	174	605	2.6E-153	T	02-12-2019	IPR001788	Tymovirus, RNA-dependent RNA polymerase
+cefmock_NODE_2757_1	7e3b50b66055097ef80198fda46fa31d	739	ProSitePatterns	PS01137	TatD deoxyribonuclease family signature 1.	121	129	-	T	02-12-2019	IPR018228	Deoxyribonuclease, TatD-related, conserved site
+cefmock_NODE_2757_1	7e3b50b66055097ef80198fda46fa31d	739	ProSiteProfiles	PS50507	RdRp of positive ssRNA viruses catalytic domain profile.	376	489	15.8	T	02-12-2019	IPR007094	RNA-directed RNA polymerase,  catalytic domain
