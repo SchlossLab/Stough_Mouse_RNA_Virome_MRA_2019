@@ -37,31 +37,29 @@ for treatment in $(awk '{ print $2 }' data/process/samples.tsv); do
 
 done
 
+### This chunk uses BBMap function dedupe.sh to remove duplicate contigs 
+# assembled in different treatment groups, then deletes the temporary file.
+
+dedupe.sh in=data/raw/scaffolds/all_long_scaffolds.fasta out=data/raw/scaffolds/all_scaffolds_nodupes.fasta outd=data/raw/scaffolds/duplicates.fasta
 
 ### This chunk removes line breaks from the sequences for easy extraction
 # later using grep
 
 echo "Removing line breaks from the scaffold sequences and creating whole scaffold file"
 echo
-awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' data/raw/scaffolds/all_long_scaffolds.fasta > data/raw/scaffolds/all_temp_scaffolds.fasta
-
-
-### This chunk uses BBMap function dedupe.sh to remove duplicate contigs 
-# assembled in different treatment groups, then deletes the temporary file.
-
-dedupe.sh in=data/raw/scaffolds/all_temp_scaffolds.fasta out=data/raw/scaffolds/all_scaffolds_nodupes.fasta outd=data/raw/scaffolds/duplicates.fasta
-
-rm data/raw/scaffolds/all_long_scaffolds.fasta data/raw/scaffolds/all_temp_scaffolds.fasta
+awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' data/raw/scaffolds/all_scaffolds_nodupes.fasta > data/raw/scaffolds/all_temp_scaffolds.fasta
 
 ### This chunk shortens the contig names using sed to replace the treatment
 # group names with shorter versions, and cut to remove all contig stats
 # except the id number
 
-sed -i 's/>cefoperazone_630_/>cef630_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
-sed -i 's/>cefoperazone_mock_/>cefmock_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
-sed -i 's/>clindamycin_630_/>clin630_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
-sed -i 's/>clindamycin_mock_/>clinmock_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
-sed -i 's/>streptomycin_630_/>strep630_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
-sed -i 's/>streptomycin_mock_/>strepmock_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
-sed -i 's/>germ_free_/>gf_/g' data/raw/scaffolds/all_scaffolds_nodupes.fasta
-cut -d '_' -f 1,2,3 data/raw/scaffolds/all_scaffolds_nodupes.fasta > data/raw/scaffolds/all_scaffolds.fasta
+sed -i 's/>cefoperazone_630_/>cef630_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
+sed -i 's/>cefoperazone_mock_/>cefmock_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
+sed -i 's/>clindamycin_630_/>clin630_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
+sed -i 's/>clindamycin_mock_/>clinmock_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
+sed -i 's/>streptomycin_630_/>strep630_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
+sed -i 's/>streptomycin_mock_/>strepmock_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
+sed -i 's/>germ_free_/>gf_/g' data/raw/scaffolds/all_temp_scaffolds.fasta
+cut -d '_' -f 1,2,3 data/raw/scaffolds/all_temp_scaffolds.fasta > data/raw/scaffolds/all_scaffolds.fasta
+
+rm data/raw/scaffolds/all_long_scaffolds.fasta data/raw/scaffolds/all_scaffolds_nodupes.fasta data/raw/scaffolds/duplicates.fasta data/raw/scaffolds/all_temp_scaffolds.fasta
