@@ -8,26 +8,30 @@
 
 ### Set up environment
 
-tree_path = "data/process/narnaviridae_tree"
+tree_path = "data/process/trees/"
 contig_file = "data/raw/genome_candidates/genomes/narna_rdrp_hits.fasta"
 mito_ref_file = "data/references/mito_rdrp_refs.fasta"
 
-### This chunk checks for whether the trimmed data directory exists
+### This chunk checks for whether the astrovirus tree directory exists
 # and creates it if it doesn't. This directory is necessary for the
 # trimming step in the code below.
+for taxa in astrovirus mitovirus; do
 
-if [ -d $tree_path ]
-then
-        echo "Narna tree folder already exists, continuing..."
-        echo
-else
-        echo "Narna tree folder doesn't exist, creating and continuing..."
-        echo
-        mkdir $tree_path
-fi
+	if [ -d $tree_path/$taxa ]
+	then
+        	echo "$taxa tree folder already exists, continuing..."
+        	echo
+	else
+        	echo "$taxa tree folder doesn't exist, creating and continuing..."
+        	echo
+        	mkdir -p $tree_path/$taxa
+	fi
+	cat
 
+done
 ### Combine contigs with refs
 
+for taxa in astro mito
 cat $mito_ref_file $contig_file > $tree_path/mito_rdrp_seqs.fasta
 
 ### Alignment
