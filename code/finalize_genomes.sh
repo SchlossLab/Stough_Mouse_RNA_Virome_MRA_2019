@@ -7,44 +7,20 @@ cand_dir="data/raw/genome_candidates"
 # exist and creates them if they don't. These directories are 
 # necessary for the steps in the code below.
 
-if [ -d $gen_dir ]
-then
-    	echo "Genomes folder already exists, continuing..."
-        echo
-else
-    	echo "Genomes folder doesn't exist, creating and continuing..."
-        echo
-	mkdir $gen_dir
-fi
+for taxa in mitovirus astrovirus; do
 
-for folder in mitovirus astrovirus; do
+	for subdir in fasta orfs annotations submissions; do
 
-	if [ -d "$gen_dir"/"$folder" ]
-	then
-    		echo "$folder already exists, continuing..."
-        	echo
-	else
-    		echo "$folder folder doesn't exist, creating and continuing..."
-        	echo
-		mkdir "$gen_dir"/"$folder"     
-	fi
-
-done
-
-for folder in $(ls $gen_dir); do
-
-	for subdir in fasta orfs annotations genbank; do
-
-		if [ -d "$gen_dir"/"$folder"/"$subdir" ]
+		if [ -d "$gen_dir"/"$taxa"/"$subdir" ]
 		then
-    			echo "$folder $subdir already exists, continuing..."
+    			echo "$taxa $subdir already exists, continuing..."
         		echo
 		else
-    			echo "$folder $subdir folder doesn't exist, creating and continuing..."
+    			echo "$taxa $subdir folder doesn't exist, creating and continuing..."
         		echo
-			mkdir "$gen_dir"/"$folder"/"$subdir"     
+			mkdir -p "$gen_dir"/"$taxa"/"$subdir"
 		fi
-	
+
 	done
 
 done
