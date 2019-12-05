@@ -1,0 +1,11 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    gl3024.arc-ts.umich.edu (AVX512, FMA3, 187 GB RAM)
+Command: iqtree -s data/process/trees/astrovirus/fasta/astro_rdrp_aligned_nogaps.fasta -pre astro_tree -st AA -m MFP -bb 1000 -nt 12
+Seed:    753024 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Dec  5 14:42:59 2019
+Kernel:  AVX+FMA - 12 threads (36 CPU cores detected)
+
+Reading alignment file data/process/trees/astrovirus/fasta/astro_rdrp_aligned_nogaps.fasta ... ERROR: File not found data/process/trees/astrovirus/fasta/astro_rdrp_aligned_nogaps.fasta
