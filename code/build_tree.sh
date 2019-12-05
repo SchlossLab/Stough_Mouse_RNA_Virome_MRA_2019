@@ -69,8 +69,8 @@ sed -i 's/NC_/NC/g' $tree_path/mitovirus/fasta/mito_rdrp_seqs_temp.fasta
 cut -d ' ' -f 1 $tree_path/mitovirus/fasta/mito_rdrp_seqs_temp.fasta > $tree_path/mitovirus/fasta/mito_rdrp_seqs.fasta
 
 cat $astro_ref_file $tree_path/astrovirus/orfs/*.fasta > $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
-sed - 's/cef630_NODE_270_2/Murine astrovirus JS1/g' $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
-cut -d ' ' -f 1 $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta > $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
+sed -i 's/cef630_NODE_270_2/Murine astrovirus JS1/g' $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
+sed -i 's/#*//g' $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
 
 ### Alignment
 
