@@ -70,13 +70,13 @@ cut -d ' ' -f 1 $tree_path/mitovirus/fasta/mito_rdrp_seqs_temp.fasta > $tree_pat
 
 cat $astro_ref_file $tree_path/astrovirus/orfs/*.fasta > $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
 sed - 's/cef630_NODE_270_2/Murine astrovirus JS1/g' $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
-cut -d ' ' -f 1 $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta > $tree_path/astrovirus/astro_rdrp_seqs.fasta
+cut -d ' ' -f 1 $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta > $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
 
 ### Alignment
 
 mafft --globalpair --maxiterate 1000 $tree_path/mitovirus/fasta/mito_rdrp_seqs.fasta > $tree_path/mitovirus/fasta/mito_rdrp_aligned.fasta
 
-mafft --globalpair --maxiterate 1000 $tree_path/astroovirus/fasta/astro_rdrp_seqs.fasta > $tree_path/astrovirus/fasta/astro_rdrp_aligned.fasta
+mafft --globalpair --maxiterate 1000 $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta > $tree_path/astrovirus/fasta/astro_rdrp_aligned.fasta
 
 ### Alignment trimming
 
