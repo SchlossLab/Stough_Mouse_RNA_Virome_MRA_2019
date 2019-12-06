@@ -92,7 +92,3 @@ mv mito_tree* $tree_path/mitovirus/trees/
 iqtree -s $tree_path/astrovirus/fasta/astro_rdrp_aligned_nogaps.fasta -pre astro_tree -st AA -m MFP -bb 1000 -nt 12
 mv astro_tree* $tree_path/astrovirus/trees/
 
-### Edit tree
-
-Rscript code/finish_trees.R
-
