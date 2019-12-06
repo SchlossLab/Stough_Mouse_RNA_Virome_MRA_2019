@@ -94,5 +94,5 @@ mv astro_tree* $tree_path/astrovirus/trees/
 
 ### Edit tree
 
-Rscript code/edit_tree.R
+Rscript code/finish_trees.R
 
