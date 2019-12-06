@@ -1,4 +1,4 @@
->YP_006843891.1_RNA-dependent_RNA_polymerase,_partial_[Murine_astrovirus]
+>YP_006843891.1_Murine_astrovirus
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -33,7 +33,7 @@ DK------DLWRQYDTVCYGDDRLTRYPVLPPH-YIER-VVAM----YKDIFGMWVKPEK
 VRVSDTLVGLTFCGFRIGEH----YLPYPAQEDKLFAGLVRPVRKLADFKTLHGKLLSLQ
 LLMHFHP-PSPFKDYLEMCLANTAKY----CPELPARFSERQMDKLWRGGPKAV------
 -HG------------------------
->YP_009448179.1_nonstructural_protein,_partial_[Rodent_astrovirus]
+>YP_009448179.1_Rodent_astrovirus
 AAV--------------------------------------------NAGNYATRLQLSE
 Q---HLYKLRQIPEHMLNAPWSIHSPPRTMIYPGPDA---------YPPVRVTTASSVTV
 DNEWVTYVLDG----DDWVQCVTAPDDQNVILVCALLNDNNRLKREI-------------
@@ -68,7 +68,7 @@ NK------ELWEDYDTICYGDDRLSRYPQIPYD-YQKR-VVDM----YRDIFGMWVKPEK
 VKVSDTLVGLTFCGFRVGPN----FQPYPADEHKLFSGLVKPAKKLPSMEALHGKLLSLQ
 ILMHNHP-PSAFKDYIEMCLMRTAIL----CPRLPARLTDRQLDWLWRGGPKPS------
 PNG------------------------
->YP_009010981.1_ORF1ab_[Porcine_astrovirus_4]
+>YP_009010981.1_Porcine_astrovirus_4
 M-----------------------------------------------------------
 -----VDRLRCLPGHRPNSPWDIRTVPRHMIYPTLSI---------DPRDRVIIASSVTT
 DNEWVTYVLDG----NSWQQTICAQDEQVVILVCALLNDKDEREKEL-------------
@@ -103,7 +103,7 @@ DK------ELWRDYDTIVYGDDRLTRYPILPEN-YRER-VIAL----YKDVFGMWIKPEK
 VKVSETLEGLTFCGFTVGPD----RLPYPTDEEKLYAGLVTPARKLPDVTALHGKLLSLQ
 LLMHNHP-DSAFKDYINKCLAETARH----AEDLPARLTERQMDRLWRGGPKHK------
 PNG------------------------
->YP_005271208.1_ORF1b,_partial_[Astrovirus_wild_boar/WBAstV-1/2011/HUN]
+>YP_005271208.1_Astrovirus_wild_boar/WBAstV-1/2011/HUN
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -138,7 +138,7 @@ DK------ELWRDYDTIVYGDDRLTRYPILPEN-YKEKGTIHL----YKSVFGMWNKTRK
 VKTSETLEGLTFCGFTVGPD----RLPYPTDEEKLYAGLVTPARKLPDVTALHGKLLSLQ
 LLMHNHP-DSAFKDYINKCLAETARH----AEDLPARLTERQMDRLWRGGPKHK------
 PNG------------------------
->YP_009154706.1_RNA-dependent_RNA_polymerase_[Astrovirus_Er/SZAL6/HUN/2011]
+>YP_009154706.1_Astrovirus_Er/SZAL6/HUN/2011
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -173,7 +173,7 @@ DW------QKWAGYDTIVYGDDRLSRTMHLPSN-YEER-VVKM----YGDIFGMWVKPEK
 VKVARDLVGLTFCGFEIGEG----FTPIPAQPYKLMASLLKPAATLKDFNTLHGKLLSFQ
 ILMAHAPKDHPFREYLEHCLAATADYI---SSDLPKRFTDEQLRLLWEGGPRDGWRDGQT
 EKG------------------------
->YP_009130648.1_RNA_dependent_RNA_polymerase,_partial_[Canine_astrovirus]
+>YP_009130648.1_Canine_astrovirus
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -208,7 +208,7 @@ NK------QLWLNYDTLVYGDDRLSTTPLIPDN-YVER-VVLM----YKDVFGMWVKPEK
 VKISNTIVGLSFCGFTVDEN----LEPIPTQPDKLMASLLKPASKLPDLESLHGKLLCYQ
 LLSAFLPEEHPFKVYVESCLAATSRQLR--DSGLPTRFTEEQMHRIWRGGPKNC------
 -DG------------------------
->YP_009664775.1_RNA-dependent_RNA_polymerase,_partial_[Bottlenose_dolphin_astrovirus_1]
+>YP_009664775.1_Bottlenose_dolphin_astrovirus_1
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -243,7 +243,7 @@ DK------KKWSKVDALIYGDDRLSSWPEIPVN-YGER-VVEM----YKKVFGMWVKPEK
 VKVQNTLVGLSFCGFTVDQN----YEPVPSSPEKLLAGLLTPTKKMPDLESLHGKLLCFQ
 LLSAFLPEDHPFKNYVEMSLASTAKQLP--GTALPPRFTEEQLHCIWRGGPKIC------
 -NG------------------------
->YP_009094053.1_RNA-dependent_RNA_polymerase,_partial_[Rabbit_astrovirus_TN/2208/2010]
+>YP_009094053.1_Rabbit_astrovirus_TN/2208/2010
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -278,7 +278,7 @@ DK------DLWDRYDTLIYGDDRLTTTPVLPSD-YVNK-VVKM----YKDVFGMWVKPEK
 VIVQPSPIGLSFCGFEINPD----YLPVPSQPYKMMASLLKPASKLQDVSSLHGKLLCFQ
 LLMHNAPDDHPFKEYLERCLVALRSHSL--GSGLPYRFTEEQLDYIWRGGPKQS------
 -YG------------------------
->NP_751905.1_orf1b_product_[Human_astrovirus]
+>NP_751905.1_Human_astrovirus
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -313,7 +313,7 @@ DR------DLWKTYDTVVYGDDRLSTTPSVPDD-YEER-VITM----YRDIFGMWVKPGK
 VICRDSIVGLSFCGFTVNEN----LEPVPTSPEKLMASLLKPYKILPDLESLHGKLLCYQ
 LLAAFMAEDHPFKVYVEHCLSRTAKQLR--DSGLPARLTEEQLHRIWRGGPKKC------
 -DG------------------------
->YP_009345903.1_RNA-dependent_RNA_polymerase,_partial_[Qinghai_Himalayan_marmot_astrovirus_2]
+>YP_009345903.1_Qinghai_Himalayan_marmot_astrovirus_2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -348,7 +348,7 @@ TA-----WDTWAHYDTLIYGDDRLNTTPSIPDN-YVER-VCNM----YRTVFGMWVKPDK
 VKVSDHIEGLSFCGFTVGPG----LVPQPTQPYKMMASLLKPCSRLPDFNSLHGKLLCFQ
 LLCHYLPEDHPFKWYLEECLEAVKARAR--GNGLPARFTEEQLERIWRGGPKKR------
 -DG------------------------
->YP_009094278.1_polyprotein_1ab_[Mamastrovirus_3]
+>YP_009094278.1_Mamastrovirus_3
 M----------------------FYLNDADRAICS--------------GSMRAREE---
 ---ITLSSIRTLPPFNPETPLHFEWEVQGLVFPTVGT---------KYFNRIIIVTG-EC
 GGTMRTYATNPD-DDGEWREIPPRE-APRILNYIRLWNKYDSLKQRLHESQQEK------
@@ -383,7 +383,7 @@ NK------ELWKSYDTIVYGDDRLNTTPYVPPN-YEEM-IIGM----YRDVFGMWVKPGK
 VKVQNTIVGLSFCGFTVNEN----LEPVPTQPEKLMAALLKPYKVLPDLESLHGKLLCYQ
 LLSAFMDEEHPFKCYIEHCLSRTAKQLR--DSGLPPRFTEEQLHYIWRGGPKES------
 -NG------------------------
->YP_008519301.1_nsp1ab_[Feline_astrovirus_2]
+>YP_008519301.1_Feline_astrovirus_2
 M----------------------FYYNDADRGICS--------------GSMRAREE---
 ---ITLASIRTMPGFNPELPLHFEWEVQGLVFPTAGS---------KYFNRIIIVTG-EC
 DGSMRTFATNPD-DDSDWREIPARE-APRTLSYIRLWNKCDSTTKRLRIAQQEK------
@@ -418,7 +418,7 @@ DK------ELWKSYDTIVYGDDRLNTTPFVPEN-YEEM-IIEM----YRKIFGMWVKPGK
 VKVQNTIVGLSFCGFTVNED----LEPVPTQPEKLMAALLKPYKALPDLESLHGKLLCYQ
 LLSAFMDEDHPFKCYIEHCLSRTAKQLR--DSGLPPRFTEEQLHYIWRGGPKDC------
 -NG------------------------
->YP_009275017.1_nonstructural_protein_[Mamastrovirus_1]
+>YP_009275017.1_Mamastrovirus_1
 MALG-----------------EPYYSSKPDKDFNF--------------GSTMARRQ---
 ---MTTTMITKLPKFVRNSPQAYDWIVRGLIFPTTGK---------TYFQRVVVVTGGLE
 DGTYGSFAF----DGREWVEIYPIE-HLNLMSSLKLIHKANALQERLRLSQEEK------
@@ -453,7 +453,7 @@ DK------DLWKTYDTVVYGDDRLSTTPSVPDN-YEER-VITM----YRDIFGMWVKPGK
 VICRDSIVGLSFCGFTVNEN----LEPVPTSPEKLMASLLKPYKILPDLESLHGKLLCYQ
 LLAAFMAEDHPFKVYVEHCLSRTAKQLR--DSGLPARLTEEQLHRIWRGGPKKC------
 -DG------------------------
->NP_059443.2_Non-structural_protein_[Human_astrovirus]
+>NP_059443.2_Human_astrovirus
 MAYG-----------------EPYYSSKPDKDFNF--------------GSTMARRQ---
 ---MTPTMVTKLPKFVRNSPQAYDWIVRGLIFPTIGK---------TYFQRVVVITGGLE
 DGTYGSFAF----DGKEWVGIYPIE-HLNLMSSLKLIHKANALQERLRLSQEEK------
@@ -488,7 +488,7 @@ DR------DLWKTYDTVVYGDDRLSTTPSVPDD-YEER-VITM----YRDIFGMWVKPGK
 VICRDSIVGLSFCGFTVNEN----LEPVPTSPEKLMASLLKPYKILPDLESLHGKLLCYQ
 LLAAFMAEDHPFKVYVEHCLSRTAKQLR--DSGLPARLTEEQLHRIWRGGPKKC------
 -DG------------------------
->YP_009380531.1_RdRp,_partial_[Mamastrovirus_2]
+>YP_009380531.1_Mamastrovirus_2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -523,7 +523,7 @@ DI-----EALWKEYDTIVYGDDRLSTTPCLPDD-YVPR-VVQM----YKEVFGMWVKPEK
 VKVTDTVKGASFCGFTVGDN----YQPIPSNPDKLWASLVTPCQKLPDVTALCGKLLSYK
 ILLHNM-EDHPFKEYVEKCLAALED-----GQTIP-RLTDEQLDRLWRGGPKIS------
 SNG------------------------
->YP_009010943.1_nsp1ab_[Bovine_astrovirus_B76/HK]
+>YP_009010943.1_Bovine_astrovirus_B76/HK
 MSL---------------------YINRADEALASH-----------DRAQLKPRFDARE
 W----FDEMRRIAP---TVPWYVVYKPRSYFYPTRTD---------VPEPQAVLTASTVC
 EGEWRTFIMDTQSGRPVMIEVNHILDHQPTILAAALIHDRAEKSKTI-------------
@@ -558,7 +558,7 @@ DI-----HALWDDYDTIVYGDDRLTSTPCIPDN-YVER-VVTM----YKEVFGMWVKPEK
 VKVTDTVVGASFCGFTVGPD----YQPIPANPEKLWASLVTPCQKLPDEFALYGKLLSFK
 ILMHNS-GDHPFKEYVEKCLAALEH-----GRSLP-KITNEQLDRLWRGGPKTN------
 PNG------------------------
->YP_009010952.1_nsp1ab_[Bovine_astrovirus_B170/HK]
+>YP_009010952.1_Bovine_astrovirus_B170/HK
 MSR---------------------YINRADEALASH-----------DRAQLKPRFDARE
 W----FDEMRRIAP---TVPWYVVYKPRSYFYPTRTD---------VPEPQAVLTASTVC
 EGEWRTFIMDTQSGRPVMIEVNHILDHQPTILAAALIHDRAEKSKTI-------------
@@ -593,7 +593,7 @@ DI-----HALWDDYDTIVYGDDRLTSTPCIPDN-YVER-VVTM----YKEVFGMWVKPEK
 VKVTDTVVGASFCGFTVGPD----YQPIPANPEKLWASLVTPCQKLPDEFALYGKLLRFK
 ILMHNS-GDHPFKEYVEKCLAALEH-----GRSLP-KITNEQLDRLWRGGPKTV------
 PNG------------------------
->YP_009010946.1_nsp1ab_[Bovine_astrovirus_B76-2/HK]
+>YP_009010946.1_Bovine_astrovirus_B76-2/HK
 MSL---------------------YINRADEAIASS-----------DRTQITPRFDARE
 W----FDELRRIGS---NIPWYITYQPRMFFYPTL-------------KPDRVLTASTVC
 EGEWRTFVLDVEHGLHKATEVNHIPDHQPTILAAALMHDRSEKAREI-------------
@@ -628,7 +628,7 @@ DI-----ETLWSDYDTIVYGDDRLTSSPSVPDD-YVPR-VVAM----YKDVFGMWVKPEK
 VKVTDTIIGASFCGFTVGKN----YQPVPSNPEKLWASLVTPCQKLPDEFALYGKLLSFK
 ILMHNC-EDHPFKDYIEKCIAALEH-----GRSLP-KITDEQLDRLWRGGPKTN------
 PNG------------------------
->YP_009480536.1_ORF1ab_[Sichuan_takin_astrovirus]
+>YP_009480536.1_Sichuan_takin_astrovirus
 ------------------------------------------------------------
 ----------------------------MFFYPTL-------------KPDRVLTASTVC
 EGEWRTFVLDVENGLHKAIEVNHIPDHQPTILAAALMHDRSEKAREI-------------
@@ -663,7 +663,7 @@ DI-----ETLWSEYDTIVYGDDRLTSSPSVPED-YVQR-VVTM----YKEVFGMWVKPEK
 VKVTDSIVGASFCGFTVGKN----YQPIPSNPEKLWASLVTPCQKLPDEFALYGKLLSFK
 ILMHNS-EDHPFKDYIEKCIAALEH-----GRSLP-KITDEQLDRLWRGGPKTN------
 PNG------------------------
->YP_009345898.1_RNA-dependent_RNA_polymerase,_partial_[Qinghai_Himalayan_marmot_astrovirus_1]
+>YP_009345898.1_Qinghai_Himalayan_marmot_astrovirus_1
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -698,7 +698,7 @@ THTEEQIEEFWKDYDTLVYGDDRLASTPILPDN-YVAR-VIQL----YKEVFGMWVKEEN
 VKVSDNLEGLSFCGFLIGKE----NLPLPAKPYKLMASLLTPTTRLPDIVALHGKLLCFQ
 LLCHHLESDHPFKRYLSACLDFIGPKIA--GSGLPARFTDSQLDAIWRGGPNS-------
 -HG------------------------
->YP_009010949.1_nsp1ab_[Bovine_astrovirus_B18/HK]
+>YP_009010949.1_Bovine_astrovirus_B18/HK
 MSL---------------------YINRADEALASN-----------DGTQVKPRFDARE
 W----FDELRRIAP---TVPWYITYQPRMYFYPTL-------------IPDRILTASTVC
 EGEWRTFVLDMEHGLHKAIEVNHIPDHQPTILTAALLHDRSEKAREI-------------
@@ -733,7 +733,7 @@ DI-----ETLWNDYDTIVYGDDRLTSSPSVPDN-YVPR-VVAM----YKDVFGMWVKPEK
 VKVTDTIIGASFCGFTVGKN----YQPVPSNPEKLWASLVTPCQKLPDEFALYGKLLSFK
 ILMHNS-EDHPFKDYIDKCIAALEH-----GRSLP-KITDEQLDHLWRGGPKTN------
 PNG------------------------
->YP_009162617.1_nonstructural_polyprotein_[Dromedary_astrovirus]
+>YP_009162617.1_Dromedary_astrovirus
 MSL---------------------YLNRADEALASN-----------DVNQLKARFDARN
 W----FDELRKIGP---NKPWYISYQPRMFFFPTT-------------KPDRVLTARFVC
 EEEWRTFVLDMCCGVPTAIEVNHIGDHQPTILAAALIDDRAAKARLI-------------
@@ -768,7 +768,7 @@ DI-----NTLWNEYDTIVYGDDRLSTTPVLPED-YVPR-VVQM----YKEVFGMWVKPEK
 VKVTDTVKGASFCGFTVGDN----YQPIPSNPYKLWASLVTPCQKLPDQIALCGKLLSYK
 ILMHNS-DDHPFKEYVEKCLAALEE-----GQIIP-RLTDEQLDRLWRGGPKTS------
 SNG------------------------
->YP_009041462.1_NSP1ab_[Bovine_astrovirus]
+>YP_009041462.1_Bovine_astrovirus
 ---------------------------------------------------MTPRFDARE
 W----FDELRKIGS---NIPWYVTYQPRMFFYPTL-------------KPDRVLTASTVC
 EGEWRTFVLDVEHGLHKAIEVNHIPDHQPTILAAALMHDRSEKAREI-------------
@@ -803,7 +803,7 @@ DI-----ETLWNDYDTIVYGDDRLTSSPSVPDD-YVPR-VVAM----YKDVFGMWVKPEK
 VKVADTIIGASFCGFTVGKN----YQPVPSNPEKLWASLVTPCQKLPDEFALYGKLLSFK
 ILMHNS-EDHPFKDYVEKCIAALEH-----GRSLP-KITDEQLDRLWRGGPKTN------
 PNG------------------------
->YP_006905853.1_ORF1b,_partial_[Astrovirus_MLB3]
+>YP_006905853.1_Astrovirus_MLB3
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -838,7 +838,7 @@ E-------EEWIHFDTIVYGDDRLSTYRTLPDN-YVNQ-VVNM----YKDVFGMWVKPEK
 VKVSNTLKGLSFCGFTNTDN-----GPVPSEPYKLMASLLKPVTKLPDIIALHGKLLCFQ
 LLMANN-VEHPFYGYVEQCLHYTHRALS--DASLPRRFTRRQLEYIWRGGPNGD------
 -YG------------------------
->YP_009010978.1_ORF1ab_[Porcine_astrovirus_2]
+>YP_009010978.1_Porcine_astrovirus_2
 MSL---------------------YLNRADEALATF-----------DGTQLKPRFDARN
 W----FDELRRIGP---NLPWYITYQPRMMFFPTL-------------KPDRVLTASTVC
 EGEWRTFVLDMCCGVHVATEVNHIPDHQPTILAAALIADRAEKARMI-------------
@@ -873,7 +873,7 @@ DI-----NELWKDYETIVYGDDRLTSTPCIPDN-YVDR-VVEM----YKTVFGMWVKPEK
 VKVTNTIKGASFCGFTVGDN----YQPIPSNPDKLWSSLVTPCQKLPDELALYGKLLSFK
 ILMHNS-EEHPFKEYVEKCLAALET-----GRTLP-KITDEQLDRLWRGGPKTA------
 SNG------------------------
->YP_004934009.1_unnamed_protein_product,_partial_[Astrovirus_MLB2]
+>YP_004934009.1_Astrovirus_MLB2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -908,7 +908,7 @@ E-------DEWIHFDTIVYGDDRLSTYRTLPAD-YTSK-VVAM----YKDVFGMWVKPEK
 VKVSDTLIGLSFCGFTNTKK-----GPAPSEPYKLMASLLKPVSKLPDIVALHGKLLCFQ
 LLMANN-ADHPFYGYVEQCLHYTHRALS--DANLPRRFTRRQLEYIWRGGPNGD------
 -YG------------------------
->YP_002290967.1_ORF1b,_partial_[Astrovirus_MLB1]
+>YP_002290967.1_Astrovirus_MLB1
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -943,7 +943,7 @@ E-------EEWMHFDTLIYGDDRISTYRSIPNE-YTKT-IVDM----YKNVFGMWVKPEK
 VKVSESLEGLSFCGFTYTPN-----GPVPSEPYKLMASLLKPATKLPDLIALHGKLLCFQ
 LLMAND-TAHPFYGYIEQCLQYTHRALS--DVSLPRRFTRRQLEYIWRGGPNDD------
 -YG------------------------
->YP_009664779.1_non-structural_polyprotein_1AB,_partial_[Bat_astrovirus_Tm/Guangxi/LD71/2007]
+>YP_009664779.1_Bat_astrovirus_Tm/Guangxi/LD71/2007
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -978,7 +978,7 @@ AYTEPELDELWRDYDSLIYGDDRLNTTPLLPDD-YVNK-VIAM----YKNVFGMWVKPEK
 VVVSDSVENLSFCGFTVKIQD-SSYLPVPTEMEKLLAALVKPVKKLQDKDSLYAKLLCYK
 ILLHYASDDNAFKHYVLVALEVVARHIRAAGGEEPCVFTDSMLDKLWRGGPNKS------
 -YGI-----------------------
->YP_009052461.1_ORF1b_[Feline_astrovirus_D1]
+>YP_009052461.1_Feline_astrovirus_D1
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1013,7 +1013,7 @@ GKTAEELCEDWERVDSLVYGDDRLTTFPSVPDD-YIER-VVSM----YKDVFGMWVKPEK
 VRVSHTPVGLSFCGFTINDD----LDPVPTDCDKLLAALVKPCKKLSDIDALYGKLLCYK
 ILCHNLDDEHSFKKYICVALEVLARHIRCKGGEEPFLFSDRMLDALWRGGPKQR------
 -YGGERPSSG-----------------
->NP_795335.1_putative_RNA-dependent_RNA_polymerase,_partial_[Mamastrovirus_10]
+>NP_795335.1_Mamastrovirus_10
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1048,7 +1048,7 @@ EKSIEELRESWDRCDSLIYGDDRLTTFDHVPPD-YVDR-VVHM----YKDVFGMWVKPEK
 VIVSDTPVGLSFCGFTVGPD----LMPVPTDCDKLVASLVTPTKKLQDIVALYSKVLCYR
 ILGHNLSDEHEFKRYVRVALEVLARHIRNLGGEEPVHVTERLLDKLWRGGPK--------
 ---------------------------
->YP_006905856.1_ORF1b,_partial_[Astrovirus_VA4]
+>YP_006905856.1_Astrovirus_VA4
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1083,7 +1083,7 @@ NKTVEELCDMWDKVDSLIYGDDRLSTYPELPDN-YKDI-VISM----YADIFGMWVKPDK
 VKVSNTIEGLTFCGFTVVKDK-NMYVPVPTETEKLIAGLVKPTKKLPDVLSLYGKLLCYR
 ILSHNLPDDHKFKNYILVALEVVARHIRAAGGEEPFHITDTMLDRLWRGGPKRG------
 -DGW-----------------------
->YP_007003830.1_ORF1ab_[Porcine_astrovirus_3]
+>YP_007003830.1_Porcine_astrovirus_3
 MAL------------------------PFDDTLRF--------------GSAAARVKGRR
 LDSVARTKLKDLLG---NGPYFYDFGPLEVVDSSSKQLTVKM-----TSVQTVYVSSVVE
 DNSYVTYKFVP--GVNEWVETEPVL-HKPTALVGVLWREYNRYKDKTESLSQEL------
@@ -1118,7 +1118,7 @@ DCTDDELEANWSRMDTLVYGDDRLSAYVGLPAN-YVER-VVTM----YSDVFGMWVKPEK
 VIVSPSIIGLTFCGLRIISDG-TAFLPVPAETNKLISALIKPTKKLQDVMTLYGKLLCYR
 ILGHNLPDDNKFKAYILVALEVVARHIRTRCGDEPLRFTDEMLDRLWGGGPKVG------
 -YGW-----------------------
->YP_003275951.1_non-structural_protein_[HMO_Astrovirus_A]
+>YP_003275951.1_HMO_Astrovirus_A
 MERS-------------YKPRGLNIYDPYDRVLQH--------------GSKSARIKGIQ
 LDKVSGNKLADIFS--DGGPLCFGYGVLEMVKVDTGSVQPVT-----TPVKTVYVSGVLA
 GNEYVTYCFKP--GVNQWVEVDPDI-HQPTALVGTLYQEYKKLVQSERELKETK------
@@ -1153,7 +1153,7 @@ DKDISQLMHDWEKVDSLIYGDDRLSTYPELPED-YVDR-VVDM----YATVFGMWVKPEK
 VKISNSIIGLTFCGFTVTESN-GIYVPVPTETEKLMAGLVRPTKRLPDILSLYGKLLCYR
 ILSHNLPDDHKFKNYILVALEVVARHIRASGGEEPYYITDGMLDRLWRGGPKRG------
 -DGW-----------------------
->YP_006905859.1_ORF1b,_partial_[Astrovirus_VA3]
+>YP_006905859.1_Astrovirus_VA3
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1188,7 +1188,7 @@ DKTIDELREGWEKVDSLIYGDDRLSTVPYVCSN-YVEK-VIDM----YENIFGMWVKPNK
 VKLSDSVIGLTFCGFTITMSD-NVYVPVPTDTDKLLAGLVTPVKKLPDILSLYGKLLCYR
 ILGHNLPDDHKFKNYILVALEVLARHIRNGGGEEPYHITDEMLDRLWRGGPKLG------
 -YGW-----------------------
->YP_009047078.1_ORF1ab_[Human_astrovirus_BF34]
+>YP_009047078.1_Human_astrovirus_BF34
 MALS-------------YKPRTKGFYDPYDKTLLF--------------GNKTARRKGLQ
 LDALSNNKLADIFE--DGGPLCFGFGDLDQVQVVHGVVTPSR-----TIVKTVYVSGVQA
 ENNYVTYCFKP--GDNKWVEVEPDI-HKPTALVGVLCQEHKRLTDQNRELKDEI------
@@ -1223,7 +1223,7 @@ TKTHDDLCSDWEKVDSLIYGDDRLSTFPELPGD-YIDK-VVKM----YADIFGMWVKSDK
 VKVSNSIIGLSFCGFTITSDG-GTYVPVPTEVDKLTAALIKPTKKLQDITSLYGKLLCYR
 ILSHNLPDDNKFKNYILVALEVLARHIRARGGEEPFFVTDEMLDKLWRGGPKRG------
 -DGW-----------------------
->NP_059945.2_orf1ab_polyprotein_(orf1ab)_[Mamastrovirus_13]
+>NP_059945.2_Mamastrovirus_13
 M-------------------------NVYDKVLQF--------------GSKKARARGMA
 LNKLSRNRLEDIYA--GSGPLVFGFGPIDMVDPGS--LNPSI-----KTLDTVYVAAVQP
 DNQYVVHHFVP--GRNEWVETDAST-HQPTALVGVLVQDHKAKTREVEDLKSQL------
@@ -1258,7 +1258,7 @@ EKSMDELRKDWESYDSLIYGDDRLTTSPSVPND-YVTR-VVAM----YKDIFGMWVKPEK
 VKVSHSPVGLSFCGFVITHQD-GQYLPVPAEEAKLLASLLRPTKKLENMDALYGKLLCYR
 ILNHNLPNDNKFRNYILVALEVMARHYSSRGEEPPFYVTESMLDKLWRGGPKFD------
 -YG------------------------
->YP_003090286.1_non-structural_protein_1ab_[Astrovirus_VA1]
+>YP_003090286.1_Astrovirus_VA1
 MERS-------------YKPSGSSHYDPYDRVLQH--------------GSVKARIQGLQ
 LNKVAKTKLEEIFS--CGGPLCFGYGDVETTRVSNGVVEPQP-----LIVKTVYVSGVRE
 GNEYVTYLFKP--GLNDWVEVDANI-HKPTAIVGVLYHEYNRLKLENESLKTER------
@@ -1293,7 +1293,7 @@ ELDSDELKENWDKYDSLIYGDDRLTTTPILCDN-YVDR-VIKM----YADVFGMWVKREK
 VKVSNEINGLTFCGFTVQESN-GLFVPIPTDTDKLLAGLITPIKKLPDILSLYGKLLCYR
 ILGHNLPDDHKFKNYILVALEVVARHIRASGGEEPYYITDSMLDRLWRGGPKQS------
 -HGW-----------------------
->YP_009664790.1_non-structural_polyprotein_1AB,_partial_[Bat_astrovirus_Tm/Guangxi/LD38/2007]
+>YP_009664790.1_Bat_astrovirus_Tm/Guangxi/LD38/2007
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1328,7 +1328,7 @@ SLDDELLWKLWCESDSIIYGDDRLSSLSLIPDD-YVEL-VVQM----YKDVFGMWVKPEN
 VKIFDTLSGVSFCGFTSVLSD-GMYLPVPTDAWKFITSTLKPVKALPDFDALVGKILSFQ
 ILTHNLPDDDPVKIWFDEAHAALSLHSTVDGGEPIPTITREMRDFLWRGGPKR-------
 ---------------------------
->YP_009664787.1_polyprotein_1AB,_partial_[Mamastrovirus_18]
+>YP_009664787.1_Mamastrovirus_18
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1363,7 +1363,7 @@ ELDLDELTELYKQCDSAVYGDDRLSSWPCVPDD-YVHQ-VVCM----YEHVFGMWVKPEK
 VKISDTLVGLTFCGFTIFKDG-DLYLPVPVDAWKFISSTLHPVKALPDFDALVGKILSYQ
 ILTHNLPDDDPVKTWFEEAHASLTLHNRVHGGDPLPVMSRDMRDFLWSGGPKKD------
 GRST-----------------------
->YP_009664783.1_non-structural_polyprotein_1AB,_partial_[Bat_astrovirus_Tm/Guangxi/LD77/2007]
+>YP_009664783.1_Bat_astrovirus_Tm/Guangxi/LD77/2007
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1398,7 +1398,7 @@ NLSIEDAKNLWEEYDTIVYGDDRLTSTPIMPEN-YKES-VIKM----YADIFGMWVKPEN
 IKVLSNLEGASFCGFTNVYDG-KMHLPVPTNTLKLVASIVTPTKKLQDADSLYGKILSMK
 VLMHNLPDTDPGKQFVLECELAMRKHMDR-AGQPLVNFTNAILDILWRGGPKK-------
 ---------------------------
->YP_009380533.1_RNA-dependent_RNA_polymerase,_partial_[California_sea_lion_astrovirus_2]
+>YP_009380533.1_California_sea_lion_astrovirus_2
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1433,7 +1433,7 @@ DK------ELWKKYDTLVYGDDRLSTTPKIVDN-YEEK-VIEM----YKNIFGMWVKPGK
 VKISETLVGLSFCGFTVDQN----LEPIPTAPEKLMASLLKPSTKLPDLESLHGKLLCYQ
 LLSTFLDEEHPFKGYVEQCLARTSKQLR--DSGLPARFTEEQLRRIWRGGPKTC------
 -DG------------------------
->YP_009047246.1_ORF1AB_nonstructural_polyprotein_[Bovine_astrovirus_CH13]
+>YP_009047246.1_Bovine_astrovirus_CH13
 MALS-------------YCPKGTRVLDTYDSVLQF--------------GSKRARQRGLA
 LDKVARNHLGDLFP--DGGPLAFGFGPLDMIDPTGD--QPKL-----HNIDTVYVAGVVA
 GNEYIVYQFIP--GLNEWRETDATI-HKPTALVGTLVQEHKRLSKEVQDLKREL------
@@ -1468,7 +1468,7 @@ HLTDDELCQHWDKYDSLIYGDDRLNTCLDLPSD-YVCR-VIDM----YATIFGMWVKPDK
 VKVSAVPQGLSFCGFTITQDTQGFYVPVPTETKKLAAALLKPTKKLDGIASLYGKLLCYR
 ILSHNLPNDNKFKNYILLALEVLARHFVARGEEPPFYVTEEMLDKLWRGGPKRD------
 -YG------------------------
->YP_009010968.1_ORF1ab_[Porcine_astrovirus_5]
+>YP_009010968.1_Porcine_astrovirus_5
 M----------------------------DQLFRR--------------GDPFARRWVES
 RPEVYKSMLKLFPD-------------NAVVFITRARHNRDF---------APVASSVDH
 DSEWVSYKYTG----TTWEQVDEVPVDSQSAVVSVALLENARLKEQVKDLQGKN------
@@ -1503,7 +1503,7 @@ RKLYEWYVHNLLNRYVLLPSGEVTFQDRGNPSGQVSTSVDNGMVNYYLQAYEHYVLN-GP
 VKVQETPVGLSFCGFTITED----LKPCLQRPMKLLASILTPVTKLRDPEVLYGKLLSML
 ILSHNDPPDSPLRRYVRRCVDILRARV---GSDLP-VFSDRILSYLWGGGPKRD------
 -DGQSA---------------------
->YP_009362294.1_RdRp,_partial_[Goose_astrovirus]
+>YP_009362294.1_Goose_astrovirus
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1538,7 +1538,7 @@ KGVFPSAEQLIANVKYICYGDDRLLSYNADFVD-YDRDTIIRM----YADVFGMWVKEEN
 VKVQVVPEGLSFCGLTIIKQDCGKYVGVP-NVDKILSTLSDPTKRLPNIEALWGKLVSLR
 LLCHNCEST--VVDFLEKQIDAVECYAYQENIKLP-EVGPNFYNRLW-------------
 ---------------------------
->NP_620617.2_non-structural_polyprotein_[Chicken_astrovirus]
+>NP_620617.2_Chicken_astrovirus
 MASAGPTGAG------ARPPKAFTAQAGLAKLVNPAGLNSILARGKEKFGGTQAWKELMG
 CDVIFARSISHWYGIKGTTYYEL------TVALGQPLYKPVT-DPELTEEEKAVMTAVQS
 RFAQS---------------------NSSVVLTRTLLNKTCELKDRIRELTDELGQTEVH
@@ -1573,7 +1573,7 @@ HGIIPTVRDYRANVDFLCYGDDRLLAFNPSFVN-YDPQVTIDM----YKNIFGMWVKPEN
 IKLFDSPTGSSFCGFTLVKPH-GQWVGVV-NVNKLLQSLKTPTRRLPDLESLWGKLVSLK
 IMCYHSDPE--AVSYLSNQIRRVEEYARAEGIELP-EVGPDFYRKIW-------------
 ---------------------------
->YP_002728002.1_ORF1b,_partial_[Duck_astrovirus_C-NGB]
+>YP_002728002.1_Duck_astrovirus_C-NGB
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1608,7 +1608,7 @@ KGRLPTVKELRENSAFICYGDDRLLSVSEDFVK-YESDTIIKM----YEEIFGMWVKPEN
 VKVQKDPEGLSFCGMTLVRNQHGIFVGVP-NVDKILSTLRNPNRKLPNIESLWGKLVSLR
 ILCQNAPEN--VRDYLDAQINSVEQYAEKENINLP-EVGPDFYEKIW-------------
 ---------------------------
->NP_987087.2_non-structural_polyprotein_1AB_[Turkey_astrovirus_2]
+>NP_987087.2_Turkey_astrovirus_2
 MAQAGRSGDAFASLDQRRERQEEQAQSGLDKVFYFQGVVELFNRMKIAYGRTPAWTALMK
 CNAIYLKDFKTAVGVEGTRYGLF-----FAEEVTKPTWSPDIGANLITLGEKACLDAQNA
 KYERL---------------------QASLKTTSGLVHQVMEKTREAKENLEKANKIQEQ
@@ -1643,7 +1643,7 @@ RGRLPTEKELQENCSMICYGDDRLLSIRKGFVE-YEPDTVIDM----YKNIFGMWVKRNN
 IKIQDTPEGLSFCGLTIVKSSTGAYVGVP-NVNKILSTLENPVRRLPDVESLWGKLVSLR
 ILCENAPSN--VKHFLDEQISNVEEFAARENIQLP-EVGPDFYSRIW-------------
 ---------------------------
->NP_853540.1_orf1ab_polyprotein_(pp1ab)_[Turkey_astrovirus]
+>NP_853540.1_Turkey_astrovirus
 MAAAAASALG-ASAPKALAPADGPIVAGLDKLVNLEGVHDLFEAMRGAYGEDPAWKGLMS
 CDVVYLKDITTAIGVKDTSVGIF------RKFSDGCSWCPTGAECFLSMKDLAYMKAQSA
 KAQRL---------------------TASLATTSNLIARAMRAESELKRARDEERKVDAR
@@ -1678,7 +1678,7 @@ HNRLPTICEIKKHTDWICYGDDRLLAVDKRFINSYDTAAVIAM----YKDVFGMWVKPDN
 IKVFPSLEGVSFCGMVWTKRK-GQYVGKP-NVDKILSTLSDPVSRLPDIQSLWGKLVSLR
 LLCENESDE--VVDYLDKQIESVSRHAKEAGIALP-KIGPDFYAEIW-------------
 ---------------------------
->YP_009664785.1_polyprotein_1AB,_partial_[Mamastrovirus_16]
+>YP_009664785.1_Mamastrovirus_16
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1713,7 +1713,7 @@ NLTIETAKELWESYDSLVYGDDRVTSTPLVPSN-YVER-VVGM----YADIFGMWVKPDN
 VKVSNTVNGLSFCGFTNNLIS-NMYLPVPTNVNKLVASLITPVKKLQDIESLAGKVLSFK
 VLMHNLPDDDPGKIFILNCESALRRHMDA-VGQPWVNFTTSMLDFLWRGGPKKG------
 -YGGCFPAGKKGSEKRGEEGDEERVQE
->YP_009664781.1_polyprotein_1AB,_partial_[Mamastrovirus_14]
+>YP_009664781.1_Mamastrovirus_14
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1748,7 +1748,7 @@ GLTIDEAKKKWVDYDTIVYGDDRITSSPLVPPD-YSDR-VIRM----YKDIFGMWVKPEN
 VKISDTLVGLSFCGFTNIREK-GMYLPVPSNCEKLVAALVRPVKKLPDIEALAGKVLSYK
 VLTHNLPDDDPSKQFVLACELSINKHLRA-REVDPITFTREMLDFLWRGGPKKR------
 -N-------------------------
->YP_009664777.1_RNA-dependent_RNA_polymerase,_partial_[Mamastrovirus_11]
+>YP_009664777.1_Mamastrovirus_11
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
@@ -1783,7 +1783,7 @@ DLSMQELCDAWERCDSLIYGDDRLTTFPSIPSD-YVNR-VVDMYKDIYKDIFGMWVKPDK
 VVVQDTPIGLSFCGFTVNQD----FMPVPTECDKLIASLVTPTKKLADIYSLYSKVLCYN
 ILGYNLEDEHEFKNYARIALEVLARHIRNMGGEEPVHVTEKMLDVLWRGGPKRR------
 -DGSRQPSSQERGQEGGQEGSEGAC--
->YP_009666025.1_RNA-dependant_RNA_polymerase,_partial_[Astrovirus_dogfaeces/Italy/2005]
+>YP_009666025.1_Astrovirus_dogfaeces/Italy/2005
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
