@@ -40,7 +40,7 @@ done
 for hit in $(grep -E "RNA-directed RNA polymerase" $orf_path/astrovirus/annotations/cef630_NODE_270_annotations.tsv | awk '{ print $1 }' | uniq); do
 
 	awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { printf "%s", n }' $orf_path/astrovirus/orfs/cef630_NODE_270_orf_translations.fasta > $orf_path/astrovirus/orfs/cef630_NODE_270_orf_translations_temp.fasta
-        grep -A 1 "$hit" $orf_path/astrovirus/orfs/cef630_NODE_270_orf_translations.fasta > $tree_path/astrovirus/orfs/$hit.fasta
+        grep -A 1 "$hit" $orf_path/astrovirus/orfs/cef630_NODE_270_orf_translations_temp.fasta > $tree_path/astrovirus/orfs/$hit.fasta
 	rm $orf_path/mitovirus/orfs/cef630_NODE_270_orf_translations_temp.fasta	
 
 done
@@ -68,9 +68,9 @@ sed -i 's/strepmock_NODE_4960_1/JS5/g' $tree_path/mitovirus/fasta/mito_rdrp_seqs
 sed -i 's/NC_/NC/g' $tree_path/mitovirus/fasta/mito_rdrp_seqs_temp.fasta
 cut -d ' ' -f 1 $tree_path/mitovirus/fasta/mito_rdrp_seqs_temp.fasta > $tree_path/mitovirus/fasta/mito_rdrp_seqs.fasta
 
-cat $astro_ref_file $tree_path/astrovirus/orfs/*.fasta > $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
-sed -i 's/cef630_NODE_270_2/Murine astrovirus JS1/g' $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
-sed -i 's/#*//g' $tree_path/astrovirus/fasta/astro_rdrp_seqs_temp.fasta
+cat $astro_ref_file $tree_path/astrovirus/orfs/*.fasta > $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
+sed -i 's/cef630_NODE_270_2/Murine astrovirus JS1/g' $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
+sed -i 's/#*//g' $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
 
 ### Alignment
 
