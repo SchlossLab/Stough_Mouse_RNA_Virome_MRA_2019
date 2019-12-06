@@ -70,7 +70,7 @@ cut -d ' ' -f 1 $tree_path/mitovirus/fasta/mito_rdrp_seqs_temp.fasta > $tree_pat
 
 cat $astro_ref_file $tree_path/astrovirus/orfs/*.fasta > $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
 sed -i 's/cef630_NODE_270_2/Murine astrovirus JS1/g' $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
-sed -i 's/#*//g' $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
+sed -i 's/ /_/g' $tree_path/astrovirus/fasta/astro_rdrp_seqs.fasta
 
 ### Alignment
 
