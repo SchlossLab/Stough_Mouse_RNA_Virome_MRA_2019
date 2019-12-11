@@ -1,5 +1,5 @@
 ---
-title: "**Complete RNA Virus Genomes Assembled from Murine Gut Microbiome Metatranscriptomes**"
+title: "**Complete RNA Virus Genomes Assembled from Murine Cecal Metatranscriptomes**"
 bibliography: references.bib
 output:
   pdf_document:
@@ -43,18 +43,18 @@ knitr::knit_hooks$set(inline=inline_hook)
 
 \vspace{35mm}
 
-Running title: Complete RNA Virus Genomes Assembled from Murine Gut Microbiome Metatranscriptomes
+**Running title:** RNA Viral Genomes from Murine Metatranscriptomes
 
 \vspace{35mm}
 
 
-Joshua M.A. Stough^1, Andrew Beaudoin, Patrick D. Schloss^1$\dagger$^
+Joshua M.A. Stough, Andrew Beaudoin, Patrick D. Schloss^$\dagger$^
 
 \vspace{40mm}
 
 $\dagger$ To whom correspondence should be addressed: pschloss@umich.edu
 
-1\. Department of Microbiology and Immunology, University of Michigan, Ann Arbor, MI 48109
+Department of Microbiology and Immunology, University of Michigan, Ann Arbor, MI 48109
 
 
 \newpage
@@ -63,26 +63,28 @@ $\dagger$ To whom correspondence should be addressed: pschloss@umich.edu
 
 ## Abstract
 
-Efforts to catalogue viral diversity in the gut microbiome have largely ignored RNA viruses. To address this, we screened assemblies of previously published mouse gut metatranscriptomes for the presence of RNA viruses. We identified the complete genomes of 6 novel viruses, a murine Astrovirus and 5 Mitovirus-like viruses.
+Efforts to catalogue viral diversity in the gut microbiome have largely ignored RNA viruses. To address this, we screened assemblies of previously published mouse gut metatranscriptomes for the presence of RNA viruses. We identified the complete genomes of a Astrovirus and 5 Mitovirus-like viruses.
 
 \newpage
 
-## Announcement
+The viral fraction of the mammalian gut microbiome forms a crucial component in the relationship between microbe and host. Bacterial viruses serve as an important source of genetic diversity and population control for the microbiota, driving its ecology and evolution [@ogilvie_human_2015]. Mammalian viruses disrupt the gut environment through infection and the response of the host immune system [@legoff_eukaryotic_2017]. Bacterial and mammalian viruses make significant contributions to host health and disease. Current efforts to describe the diversity of viruses present in the gut have focused on using shotgun metagenomics to identify double-stranded DNA viruses, predominantly bacteriophage and host pathogens [**INSERT REFERENCE**]. However, this method ignores viruses with RNA genomes, which make up a considerable portion of the environmental viromes [@culley_new_2018].
 
-The viral fraction of the mammalian gut microbiome forms a crucial component in the relationship between microbe and host. Bacterial viruses serve as an important source of genetic diversity and population control for the microbiota [@ogilvie_human_2015], driving its ecology and evolution while mammalian viruses disrupt the gut environment through infection and the response of the host immune system [@legoff_eukaryotic_2017], both making significant contributions to host health and disease in ways that are not well understood. Current efforts to describe the diversity of viruses present in the gut have focused on using shotgun metagenomics to identify double-stranded DNA viruses, predominantly bacteriophage and host pathogens. However, this method ignores viruses with RNA genomes, which make up a considerable portion of the environmental viromes [@culley_new_2018] and whose abundance and diversity in the gut has not been deeply studied. In order to address this, we re-analyzed deeply-sequenced metatranscriptome data produced by our lab for the study of microbiome dynamics in the mouse model for Clostridioides difficile infection [@jenior_clostridium_2017; @jenior_clostridium_2018], screening for the presence of genes encoding RNA-dependent RNA polymerase, which is conserved amongst almost all RNA viruses without a DNA stage in genome replication.
-Mouse experiments, extraction, and sequencing methods were previously described [@jenior_clostridium_2017; @jenior_clostridium_2018]. Briefly, mice were treated with one of three different antibiotics (clindamycin, streptomycin, or cefoperazone) and were infected with C. difficile strain 630. 18 hours p.i., ceca were removed and contents were frozen for RNA extraction and sequencing. 
-Each sample was assembled individually using rnaSPAdes v3.13.1 [@bankevich_spades:_2012] and concatenated for dereplication, resulting in 70,779 contigs >=1kb. Contigs were then screened against a custom RefSeq database of viral RNA-dependent RNA polymerase protein sequences with a maximum e-value of 10^-20, resulting in 22 contig hits. These contigs were then annotated with Interproscan v5.39-77.0, and phylogenetic trees were constructed from RdRP protein sequences using IQ-TREE v1.6.12 [@hoang_ufboot2:_2018; @kalyaanamoorthy_modelfinder:_2017; @nguyen_iq-tree:_2015].
-The assembled astrovirus is 6811 bases long with a coverage of 1683x and 3 predicted open reading frames, each encoding a capsid, RdRP, and a trypsin-like peptidase. We also observed 5 distinct, but closely related RNA virus genomes range from 2309 to 2447 bases in length that appear to belong to a previously undescribed clade of Narnaviridae. Narnaviridae contains a broad array of positive-sense RNA viruses, including the Ourmiaviruses, Narnaviruses, Leviviruses, and Mitoviruses, which typically infect plants, invertibrates, bacteria, and fungi, respectively. The genomes were assembled with high coverage from most of the mouse treatment groups, including germ-free mice.
+We re-analyzed deeply-sequenced metatranscriptome data produced by our lab for the study of microbiome dynamics in a mouse model for *Clostridioides difficile* infection [@jenior_clostridium_2017; @jenior_clostridium_2018]. Briefly, C57Bl/6 mice from a breeding colony we maintain at the University of Michigan were treated with one of three different antibiotics (clindamycin, streptomycin, or cefoperazone). After a 24 hour recovery period, the mice were infected with *C. difficile* strain 630. Cecal contents were removed from each animal 18 hours post infection and frozen for RNA extraction and sequencing. RNA sequences from each sample were assembled individually using rnaSPAdes v3.13.1 [@bankevich_spades:_2012] and concatenated for dereplication, resulting in **R 70,779** contigs longer than 1 kb. Contigs were then screened against a custom RefSeq database of viral RNA-dependent RNA polymerase (RdRP) protein sequences with a maximum e-value of 10^-20^, resulting in **R 22** contig hits. RdRP is conserved amongst almost all RNA viruses without a DNA stage in genome replication. These contigs were then annotated with Interproscan v5.39-77.0 [@hoang_ufboot2:_2018; @kalyaanamoorthy_modelfinder:_2017]. We constructed phylogenetic trees from RdRP protein sequences using IQ-TREE v1.6.12 [@nguyen_iq-tree:_2015].
 
-## Data Availability
-The RNA-seq data are available the NCBI Sequence Read Archive (SRA) database under the accession numbers PRJNA354635 (C. difficile infected mice) and PRJNA415307 (mock-infected mice). The assembled genomes are available at the National Center for Biotechnology Information (NCBI) GenBank under the accession numbers MN780842, MN780843, MN780844, MN780845, MN780846, and MN780847. All of the scripts and software used to perform this analysis are available at https://github.com/JMAStough/Stough_Mouse_RNA_Virome_MRA_2019.
+Two classes of RNA viruses were assembled with high coverage with sequences originating from most of the mouse treatment groups, including germ-free mice. First, a **R 6811** base-long astrovirus genome was obtained with **R 1683**-fold coverage (Figure 1A). The genome contained 3 predicted open reading frames encoding a capsid, RdRP, and a trypsin-like peptidase. Second, 5 distinct, but closely related RNA virus genomes ranging in length from **R 2309 to 2447** bases with **R XXXXX** to **R XXXXXX**-fold coverage belonged to a previously undescribed clade of Narnaviridae adjacent to the Mitoviruses (Figure 1B). These RNA virus genomes will facilitate future studies of RNA virus biology in the murine microbiome.
+
+
+**Data Availability.** The RNA-seq data are available the NCBI Sequence Read Archive (SRA) database under the accession numbers [PRJNA354635](https://www.ncbi.nlm.nih.gov/bioproject/354635) (*C. difficile* infected mice) and [PRJNA415307](https://www.ncbi.nlm.nih.gov/bioproject/415307) (mock-infected mice). The assembled genomes are available at the National Center for Biotechnology Information (NCBI) GenBank under the accession numbers [MN780842-MN780847](). All of the scripts and software used to perform this analysis are available at https://github.com/JMAStough/Stough_Mouse_RNA_Virome_MRA_2019.
 
 ## Acknowledgements
-
-\newpage
-
-**Figure 1. Phylogenetic trees showing the relatives of the metatranscriptome assembled genomes.** Maximum Likelihood phylogenetic trees constructed from RdRP amino acid sequences for (A) Astroviruses and (B) Narnaviruses. Node annotations represent IQTree Ultra-fast Bootstrap statistics, values less than 50% were excluded from the tree. Scale bars are marked in red to the left of each tree. Highlight colors in (B) represent major Narnavirus taxa: Orange - Ourmiaviruses, Pink - Ourmia-like Mycoviruses, Gray - Narnaviruses, Blue - Mitoviruses, Purple - Murine Mitovirus-like viruses, Green - Leviviruses.
+This research was supported by NIH grant U01AI12455. The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication.
 
 \newpage
 
 ## References
+<div id="refs"></div>
+
+\newpage
+
+
+**Figure 1. Phylogenetic trees showing the relatives of the metatranscriptome assembled genomes.** Maximum Likelihood phylogenetic trees constructed from RdRP amino acid sequences for (A) Astroviruses and (B) Narnaviruses. Node annotations represent IQTree Ultra-fast Bootstrap statistics, values less than 50% were excluded from the tree. Scale bars are marked in red to the left of each tree. Highlight colors in (B) represent major Narnavirus taxa: Orange - Ourmiaviruses, Pink - Ourmia-like Mycoviruses, Gray - Narnaviruses, Blue - Mitoviruses, Purple - Murine Mitovirus-like viruses, Green - Leviviruses.
