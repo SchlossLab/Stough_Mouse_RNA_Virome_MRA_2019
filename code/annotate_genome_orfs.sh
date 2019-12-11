@@ -69,7 +69,6 @@ else
     	mkdir data/raw/genome_candidates/annotations
 fi
 
-
 ### Extract RNA virus genomes from contig files
 
 if [ -e data/raw/genome_candidates/genomes/rdrp_hits.fasta ];
@@ -86,6 +85,7 @@ for hit in $(awk '{ print $1 }' data/raw/blasts/rdrp_blasts.tsv | uniq); do
 
 done
 
+grep ">" data/raw/genome_candidates/genomes/rdrp_hits.fasta | sed 's/>//g' > results/tables/rdrp_hits.tsv
 
 ### This chunk uses Prodigal to predict open reading frames in the scaffolds with hits
 # in the RdRP protein database and outputs nucleotide sequences, protein translations,
