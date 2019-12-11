@@ -52,7 +52,7 @@ awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0; n = "" } END { print
 ### This chunk uses grep to extract contig names and stats into a tsv file
 # that will be parsed in R in another script
 
-grep ">" data/raw/scaffolds/all_long_scaffolds.fasta | sed 's/>//g' > results/tables/contig_stats_raw.tsv
+grep ">" data/raw/scaffolds/all_temp_scaffolds.fasta | sed 's/>//g' > results/tables/contig_stats_raw.tsv
 
 ### This chunk shortens the contig names using sed to replace the treatment
 # group names with shorter versions, and cut to remove all contig stats
