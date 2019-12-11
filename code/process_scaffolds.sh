@@ -45,7 +45,7 @@ dedupe.sh in=data/raw/scaffolds/all_long_scaffolds.fasta out=data/raw/scaffolds/
 ### This chunk uses grep to extract contig names and stats into a tsv file
 # that will be parsed in R in another script
 
-grep ">" data/raw/scaffolds/all_long_scaffolds.fasta | sed 's/>//g' > results/tables/contig_stats.tsv 
+grep ">" data/raw/scaffolds/all_long_scaffolds.fasta | sed 's/>//g' > results/tables/contig_stats_raw.tsv
 
 
 ### This chunk removes line breaks from the sequences for easy extraction
