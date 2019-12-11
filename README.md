@@ -1,7 +1,6 @@
 ## Mouse gut RNA virus genomes assembled from metatranscriptomes
 
-wut wut
-
+Efforts to catalogue viral diversity in the gut microbiome have largely ignored RNA viruses. To address this, we screened assemblies of previously published mouse gut metatranscriptomes for the presence of RNA viruses. We identified the complete genomes of a Astrovirus and 5 Mitovirus-like viruses.
 
 
 
@@ -24,7 +23,6 @@ wut wut
 	|- data           # raw and primary data, are not changed once created
 	| |- references/  # reference files to be used in analysis
 	| |- raw/         # raw data, will not be altered
-	| |- mothur/      # mothur processed data
 	| +- process/     # cleaned data, will not be altered once created;
 	|                 # will be committed to repo
 	|
@@ -46,18 +44,26 @@ wut wut
 
 #### Dependencies and locations
 * Gnu Make should be located in the user's PATH
-* R (v. 3.X.X) should be located in the user's PATH
+* R (v. 3.6.1) should be located in the user's PATH
 * R packages:
   * `knitr`
   * `rmarkdown`
+  * `ape`
+  * `phangorn`
+  * `ggtree`
+  * `tidyverse`
+  * `cowplot`
 * SPAdes v3.13.1
 * Trimmomatic v0.39
 * Bowtie 2 v2.3.4.3
 * ccontigs
 * BBMap v36.68
 * NCBI blast v2.9.0
-* SRA toolkit v2.9.6
 * Prodigal v2.6.3
+* Interproscan v5.39-77.0
+* MAFFT v7.453
+* Trimal v1.4
+* IQ-TREE 1.6.12
 
 #### Running analysis
 
