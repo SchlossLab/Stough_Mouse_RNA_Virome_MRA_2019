@@ -18,9 +18,13 @@ astro_node_labels <- astro_tree_data %>% filter(isTip == FALSE) %>%
   filter(label >= 50)
 
 astro_tree_figure <- ggtree(midpoint_astro_tree) +
-  geom_text(data = astro_node_labels, aes(label = node), hjust = 1.3, vjust = -0.6, size = 2) +
-  geom_tiplab(data = astro_tip_labels, aes(label = label), align = TRUE, size = 3) +
-  geom_treescale(x = 0.05, y = 16, color = "red") +
+  geom_text(data = astro_node_labels, aes(label = label), hjust = 1.3, vjust = -0.6, size = 2) +
+  geom_tiplab(data = astro_tip_labels, aes(label = label, fill = grepl("Murine astrovirus JS1", label)),
+              label.padding = unit(0.15, "lines"),label.size = 0, 
+              align = TRUE, size = 2, geom = "label") +
+  scale_fill_manual(values = c("white", "red")) +
+  theme(legend.position="none") +
+  geom_treescale(x = 0.05, y = 17, color = "red") +
   xlim_tree(3)
 
 astro_tree_figure
