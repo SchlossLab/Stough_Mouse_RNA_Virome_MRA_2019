@@ -17,9 +17,9 @@ print-%:
 
 ################################################################################
 
-#make a pdf to embed figure in manuscript pdf for Pat to review
-results/figures/Figure1.pdf : results/figures/Figure1.tiff
-	tiff2pdf -o results/figures/Figure1.pdf results/figures/Figure1.tiff
+results/figures/Figure1.eps : results/figures/Figure1.pdf
+	pdf2ps results/figures/Figure1.pdf
+	mv Figure1.ps results/figures/Figure1.eps
 
 submission/manuscript.md submission/manuscript.tex submission/manuscript.pdf : \
 						submission/american-society-for-microbiology.csl\

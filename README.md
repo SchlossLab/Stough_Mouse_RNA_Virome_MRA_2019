@@ -12,13 +12,13 @@ Efforts to catalogue viral diversity in the gut microbiome have largely ignored 
 	|- LICENSE         # the license for this project
 	|
 	|- submission/
-	| |- study.Rmd    # executable Rmarkdown for this study, if applicable
-	| |- study.md     # Markdown (GitHub) version of the *.Rmd file
-	| |- study.tex    # TeX version of *.Rmd file
-	| |- study.pdf    # PDF version of *.Rmd file
+	| |- manuscript.Rmd    # executable Rmarkdown for this study, if applicable
+	| |- manuscript.md     # Markdown (GitHub) version of the *.Rmd file
+	| |- manuscript.tex    # TeX version of *.Rmd file
+	| |- manuscript.pdf    # PDF version of *.Rmd file
 	| |- header.tex   # LaTeX header file to format pdf version of manuscript
 	| |- references.bib # BibTeX formatted references
-	| |- XXXX.csl     # csl file to format references for journal XXX
+	| |- american-society-for-microbiology.csl     # csl file to format references for journal XXX
 	|
 	|- data           # raw and primary data, are not changed once created
 	| |- references/  # reference files to be used in analysis
