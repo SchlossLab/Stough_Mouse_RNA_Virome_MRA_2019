@@ -69,5 +69,16 @@ Efforts to catalogue viral diversity in the gut microbiome have largely ignored 
 
 ```
 git clone https://github.com/JMAStough/Stough_Mouse_RNA_Virome_MRA_2019.git
+bash code/get_raw_data.sh
+bash code/trim_reads.sh
+bash code/assemble_metatrans.sh
+bash code/process_scaffolds.sh
+bash code/blast_all_rdrp.sh
+bash code/annotate_genome_orfs.sh
+bash code/finalize_genomes.sh
+bash code/generate_genbank_submissions
+bash code/build_tree.sh
+Rscript code/finish_trees.R
+Rscript code/contig_stats.R
 make write.paper
 ```
