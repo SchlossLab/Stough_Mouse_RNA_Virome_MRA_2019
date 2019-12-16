@@ -3,19 +3,16 @@ library(ggtree)
 library(ape)
 library(phangorn)
 
+source("code/tree_editing_tools.R")
+
 input_mito_tree <- "data/process/trees/mitovirus/trees/mito_tree.treefile"
 
 mito_tree <- read.tree(file = input_mito_tree)
 midpoint_mito_tree <- midpoint(mito_tree)
-mito_tree_data <- ggtree(midpoint_mito_tree)
-mito_tree_table <- mito_tree_data$data 
 
-mito_tip_labels <- mito_tree_data %>% filter(isTip == TRUE) %>%
-  mutate(label = str_replace_all(label, pattern = "_", replacement = " "))
+mito_tip_labels <- get_tip_labels(mito_tree)
 
-mito_node_labels <- mito_tree_data %>% filter(isTip == FALSE) %>%
-  mutate(label = as.numeric(label)) %>%
-  filter(label >= 50)
+mito_node_labels <- get_node_labels(mito_tree) 
 
 mito_tree_figure <- ggtree(midpoint_mito_tree) +
   geom_hilight(node = 48, fill = "blue", extend = 0.01) +
