@@ -1,17 +1,17 @@
 library(tidyverse)
 
-num_hits <- read_tsv(file = "../results/tables/rdrp_hits.tsv",
+num_hits <- read_tsv(file = "results/tables/rdrp_hits.tsv",
                      col_names = FALSE) %>%
   summarise(n())
 
-scaffold_stats <- read_tsv(file = "../results/tables/contig_stats_raw.tsv", 
+scaffold_stats <- read_tsv(file = "results/tables/contig_stats_raw.tsv", 
                            col_names = FALSE) %>%
   separate(X1, into = c("a", "b", "c", "d", "e", "length", "g", "coverage", 
                         "j", "k"), sep = '_') %>%
   unite("id", a:d, sep = '_') %>%
   select(id, length, coverage)
 
-write.table(scaffold_stats, file = "../results/tables/scaffold_stats.tsv", sep = '_')
+write.table(scaffold_stats, file = "results/tables/scaffold_stats.tsv", sep = '_')
 
 num_scaffolds <- scaffold_stats %>%
   summarise(n())
@@ -39,3 +39,13 @@ mito_cov <- scaffold_stats %>%
                    "streptomycin_630_NODE_11363",
                    "streptomycin_mock_NODE_4960")) %>%
   summarise("low" = min(as.numeric(coverage)), "high" = max(as.numeric(coverage)))
+
+astro_gc <- read_csv(file = "results/tables/astrovirus_gc.csv") %>%
+  filter(contig_id == "cef630_NODE_270") %>%
+  select(gc_content)
+
+mito_gc <- read_csv(file = "results/tables/mitovirus_gc.csv") %>%
+  filter(contig_id != "cefmock_NODE_2757") %>%
+  summarise("mean_gc" = mean(gc_content))
+
+
