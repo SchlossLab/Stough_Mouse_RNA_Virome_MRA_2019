@@ -4,11 +4,12 @@ num_hits <- read_tsv(file = "results/tables/rdrp_hits.tsv",
                      col_names = FALSE) %>%
   summarise(n())
 
-scaffold_stats <- read_tsv(file = "results/tables/contig_stats_raw.tsv", 
+scaffold_stats <- read_tsv(file = "results/tables/contig_stats_raw.tsv",
                            col_names = FALSE) %>%
-  separate(X1, into = c("a", "b", "c", "d", "e", "length", "g", "coverage", 
+  separate(X1, into = c("a", "b", "c", "d", "e", "length", "g", "coverage",
                         "j", "k"), sep = '_') %>%
   unite("id", a:d, sep = '_') %>%
+	mutate(length = as.numeric(length), coverage = as.numeric(coverage)) %>%
   select(id, length, coverage)
 
 write.table(scaffold_stats, file = "results/tables/scaffold_stats.tsv", sep = '_')
@@ -47,5 +48,3 @@ astro_gc <- read_csv(file = "results/tables/astrovirus_gc.csv") %>%
 mito_gc <- read_csv(file = "results/tables/mitovirus_gc.csv") %>%
   filter(contig_id != "cefmock_NODE_2757") %>%
   summarise("mean_gc" = mean(gc_content))
-
-

@@ -12,13 +12,13 @@ Efforts to catalogue viral diversity in the gut microbiome have largely ignored 
 	|- LICENSE         # the license for this project
 	|
 	|- submission/
-	| |- study.Rmd    # executable Rmarkdown for this study, if applicable
-	| |- study.md     # Markdown (GitHub) version of the *.Rmd file
-	| |- study.tex    # TeX version of *.Rmd file
-	| |- study.pdf    # PDF version of *.Rmd file
+	| |- manuscript.Rmd    # executable Rmarkdown for this study, if applicable
+	| |- manuscript.md     # Markdown (GitHub) version of the *.Rmd file
+	| |- manuscript.tex    # TeX version of *.Rmd file
+	| |- manuscript.pdf    # PDF version of *.Rmd file
 	| |- header.tex   # LaTeX header file to format pdf version of manuscript
 	| |- references.bib # BibTeX formatted references
-	| |- XXXX.csl     # csl file to format references for journal XXX
+	| |- american-society-for-microbiology.csl     # csl file to format references for journal XXX
 	|
 	|- data           # raw and primary data, are not changed once created
 	| |- references/  # reference files to be used in analysis
@@ -69,5 +69,16 @@ Efforts to catalogue viral diversity in the gut microbiome have largely ignored 
 
 ```
 git clone https://github.com/JMAStough/Stough_Mouse_RNA_Virome_MRA_2019.git
+bash code/get_raw_data.sh
+bash code/trim_reads.sh
+bash code/assemble_metatrans.sh
+bash code/process_scaffolds.sh
+bash code/blast_all_rdrp.sh
+bash code/annotate_genome_orfs.sh
+bash code/finalize_genomes.sh
+bash code/generate_genbank_submissions
+bash code/build_tree.sh
+Rscript code/finish_trees.R
+Rscript code/contig_stats.R
 make write.paper
 ```
