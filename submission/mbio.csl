@@ -32,7 +32,7 @@
   </info>
   <macro name="author">
     <names variable="author" suffix=".">
-      <name sort-separator=" " initialize-with="" name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
+      <name sort-separator=" " initialize-with="" font-weight="bold" name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
     </names>
   </macro>
   <macro name="issued">
@@ -102,13 +102,15 @@
       </choose>
     </group>
   </macro>
+
   <macro name="locators">
     <choose>
       <if type="article-journal">
         <group prefix=" " delimiter=":">
-          <text variable="volume"/>
+          <text variable="volume" font-weight="bold"/>
           <text variable="page"/>
         </group>
+		<text variable="doi" prefix=". doi:"/>
       </if>
     </choose>
   </macro>

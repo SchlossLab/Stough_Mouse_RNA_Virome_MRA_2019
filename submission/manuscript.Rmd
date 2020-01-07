@@ -6,7 +6,7 @@ output:
     keep_tex: true
     includes:
       in_header: header.tex
-csl: american-society-for-microbiology.csl
+csl: mbio.csl
 fontsize: 11pt
 geometry: margin=1.0in
 ---

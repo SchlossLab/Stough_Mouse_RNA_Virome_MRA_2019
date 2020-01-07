@@ -27,7 +27,7 @@ results/figures/Figure1.eps : results/figures/Figure1.pdf
 	mv Figure1.ps results/figures/Figure1.eps
 
 submission/manuscript.md submission/manuscript.tex submission/manuscript.pdf : \
-						submission/american-society-for-microbiology.csl\
+						submission/mbio.csl\
 						submission/references.bib\
 						submission/manuscript.Rmd\
 						results/figures/Figure1.pdf
@@ -35,6 +35,8 @@ submission/manuscript.md submission/manuscript.tex submission/manuscript.pdf : \
 	mv submission/manuscript.knit.md submission/manuscript.md
 	rm submission/manuscript.utf8.md
 
+submission/manuscript.docx : submission/manuscript.tex
+	pandoc submission/manuscript.tex -o submission/manuscript.docx
 
 write.paper : submission/manuscript.md\
 				submission/manuscript.tex submission/manuscript.pdf
