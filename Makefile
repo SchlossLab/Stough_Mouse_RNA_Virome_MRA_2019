@@ -17,6 +17,11 @@ print-%:
 
 ################################################################################
 
+results/figures/Figure1.pdf : code/finish_trees.R\
+ 		code/edit_astro_tree.R\
+		code/edit_mito_tree.R
+	Rscript code/finish_trees.R
+
 results/figures/Figure1.eps : results/figures/Figure1.pdf
 	pdf2ps results/figures/Figure1.pdf
 	mv Figure1.ps results/figures/Figure1.eps
