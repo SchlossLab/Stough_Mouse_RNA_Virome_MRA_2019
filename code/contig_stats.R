@@ -40,3 +40,11 @@ mito_cov <- scaffold_stats %>%
                    "streptomycin_630_NODE_11363",
                    "streptomycin_mock_NODE_4960")) %>%
   summarise("low" = min(as.numeric(coverage)), "high" = max(as.numeric(coverage)))
+
+astro_gc <- read_csv(file = "results/tables/astrovirus_gc.csv") %>%
+  filter(contig_id == "cef630_NODE_270") %>%
+  select(gc_content)
+
+mito_gc <- read_csv(file = "results/tables/mitovirus_gc.csv") %>%
+  filter(contig_id != "cefmock_NODE_2757") %>%
+  summarise("mean_gc" = mean(gc_content))

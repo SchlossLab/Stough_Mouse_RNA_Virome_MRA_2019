@@ -1,38 +1,48 @@
-\documentclass[11pt,]{article}
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Complete RNA Virus Genomes Assembled from Murine Cecal Metatranscriptomes},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1.0in]{geometry}
-\usepackage{hyperref}
-\hypersetup{unicode=true,
-            pdftitle={Complete RNA Virus Genomes Assembled from Murine Cecal Metatranscriptomes},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
-\usepackage{graphicx}
-% grffile has become a legacy package: https://ctan.org/pkg/grffile
-\IfFileExists{grffile.sty}{%
-\usepackage{grffile}
-}{}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -41,51 +51,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-%%% Use protect on footnotes to avoid problems with footnotes in titles
-\let\rmarkdownfootnote\footnote%
-\def\footnote{\protect\rmarkdownfootnote}
-
-%%% Change title format to be more compact
-\usepackage{titling}
-
-% Create subtitle command for use in maketitle
-\providecommand{\subtitle}[1]{
-  \posttitle{
-    \begin{center}\large#1\end{center}
-    }
-}
-
-\setlength{\droptitle}{-2em}
-
-  \title{\textbf{Complete RNA Virus Genomes Assembled from Murine Cecal
-Metatranscriptomes}}
-    \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-    \author{}
-    \preauthor{}\postauthor{}
-    \date{}
-    \predate{}\postdate{}
-  
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{helvet} % Helvetica font
 \renewcommand*\familydefault{\sfdefault} % Use the sans serif version of the font
 \usepackage[T1]{fontenc}
@@ -99,6 +72,11 @@ Metatranscriptomes}}
 \usepackage{lineno}
 
 \usepackage{pdfpages}
+
+\title{\textbf{Complete RNA Virus Genomes Assembled from Murine Cecal
+Metatranscriptomes}}
+\author{}
+\date{\vspace{-2.5em}}
 
 \begin{document}
 \maketitle
@@ -169,15 +147,15 @@ sequences using IQ-TREE v1.6.12 (10).
 
 Two classes of RNA viruses were assembled with high coverage with
 sequences originating from most of the mouse treatment groups, including
-the mono-associated mice. First, a 6,811 base-long astrovirus genome was
-obtained with 1,683.5-fold coverage (Figure 1A). The genome contained 3
-predicted open reading frames encoding a capsid, RdRP, and a
+germ-free mice. First, a 6,811 base-long astrovirus genome (GC 56.6\%)
+was obtained with 1,683.5-fold coverage (Figure 1A). The genome
+contained 3 predicted open reading frames encoding a capsid, RdRP, and a
 trypsin-like peptidase. Second, 5 distinct, but closely related RNA
 virus genomes ranging in length from 2,309 to 2,447 bases with 4.6 to
-16,078.8-fold coverage belonged to a previously undescribed clade of
-Narnaviridae adjacent to the Mitoviruses (Figure 1B). These RNA virus
-genomes will facilitate future studies of RNA virus biology in the
-murine microbiome.
+16,078.8-fold coverage and average GC content of 46.2 belonged to a
+previously undescribed clade of Narnaviridae adjacent to the Mitoviruses
+(Figure 1B). These RNA virus genomes will facilitate future studies of
+RNA virus biology in the murine microbiome.
 
 \textbf{Data Availability.} The RNA-seq data are available the NCBI
 Sequence Read Archive (SRA) database under the accession numbers
@@ -271,6 +249,5 @@ Scale bars are marked in red to the left of each tree. Highlight colors
 in (B) represent major Narnavirus taxa: Orange - Ourmiaviruses, Pink -
 Ourmia-like Mycoviruses, Gray - Narnaviruses, Blue - Mitoviruses, Purple
 - Murine Mitovirus-like viruses, Green - Leviviruses.
-
 
 \end{document}
