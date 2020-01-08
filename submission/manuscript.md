@@ -24,7 +24,7 @@ geometry: margin=1.0in
 \vspace{35mm}
 
 
-Joshua M.A. Stough, Andrew Beaudoin, Patrick D. Schloss^$\dagger$^
+Joshua M.A. Stough, Andrew J. Beaudoin, Patrick D. Schloss^$\dagger$^
 
 \vspace{40mm}
 
@@ -39,7 +39,7 @@ Department of Microbiology and Immunology, University of Michigan, Ann Arbor, MI
 
 ## Abstract
 
-Efforts to catalogue viral diversity in the gut microbiome have largely ignored RNA viruses. To address this, we screened assemblies of previously published mouse gut metatranscriptomes for the presence of RNA viruses. We identified the complete genomes of an Astrovirus and 5 Mitovirus-like viruses.
+Efforts to catalog viral diversity in the gut microbiome have largely ignored RNA viruses. To address this, we screened assemblies of previously published mouse gut metatranscriptomes for the presence of RNA viruses. We identified the complete genomes of an Astrovirus and 5 Mitovirus-like viruses.
 
 \newpage
 

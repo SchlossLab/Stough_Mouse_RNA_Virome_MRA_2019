@@ -8,7 +8,7 @@ input_astro_tree <- "data/process/trees/astrovirus/trees/astro_tree.treefile"
 astro_tree <- read.tree(file = input_astro_tree)
 midpoint_astro_tree <- midpoint(astro_tree)
 astro_tree_data <- ggtree(midpoint_astro_tree)
-astro_tree_table <- astro_tree_data$data 
+astro_tree_table <- astro_tree_data$data
 
 astro_tip_labels <- astro_tree_data %>% filter(isTip == TRUE) %>%
   mutate(label = str_replace_all(label, pattern = "_", replacement = " "))
@@ -20,11 +20,11 @@ astro_node_labels <- astro_tree_data %>% filter(isTip == FALSE) %>%
 astro_tree_figure <- ggtree(midpoint_astro_tree) +
   geom_text(data = astro_node_labels, aes(label = label), hjust = 1.3, vjust = -0.6, size = 1) +
   geom_tiplab(data = astro_tip_labels, aes(label = label, fill = grepl("Murine astrovirus JS1", label)),
-              label.padding = unit(0.05, "lines"), label.size = 0, label.shape = 4, 
+              label.padding = unit(0.05, "lines"), label.size = 0, label.shape = 4,
               align = TRUE, size = 1.8, geom = "label") +
   scale_fill_manual(values = c(NA, "lightpink")) +
   theme(legend.position="none") +
-  geom_treescale(x = 0.05, y = 17, color = "red") +
+  geom_treescale(x = 0.05, y = 17, color = "red", fontsize=2.5) +
   xlim_tree(3)
 
 astro_tree_figure

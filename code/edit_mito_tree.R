@@ -8,7 +8,7 @@ input_mito_tree <- "data/process/trees/mitovirus/trees/mito_tree.treefile"
 mito_tree <- read.tree(file = input_mito_tree)
 midpoint_mito_tree <- midpoint(mito_tree)
 mito_tree_data <- ggtree(midpoint_mito_tree)
-mito_tree_table <- mito_tree_data$data 
+mito_tree_table <- mito_tree_data$data
 
 mito_tip_labels <- mito_tree_data %>% filter(isTip == TRUE) %>%
   mutate(label = str_replace_all(label, pattern = "_", replacement = " "))
@@ -26,7 +26,7 @@ mito_tree_figure <- ggtree(midpoint_mito_tree) +
   geom_hilight(node = 66, fill = "darkgray", alpha = 0.7, extend = 0.52) +
   geom_text(data = mito_node_labels, aes(label = node), hjust = 1.3, vjust = -0.6, size = 1) +
   geom_tiplab(data = mito_tip_labels, aes(label = label), align = TRUE, size = 2) +
-  geom_treescale(x = 0.4, y = 35, color = "red") +
+  geom_treescale(x = 0.4, y = 35, color = "red", fontsize=2.5) +
   xlim_tree(12)
 
 mito_tree_figure
