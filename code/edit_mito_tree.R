@@ -25,7 +25,11 @@ mito_tree_figure <- ggtree(midpoint_mito_tree) +
   geom_hilight(node = 72, fill = "chocolate", alpha = 0.7, extend = 0.12) +
   geom_hilight(node = 66, fill = "darkgray", alpha = 0.7, extend = 0.52) +
   geom_text(data = mito_node_labels, aes(label = node), hjust = 1.3, vjust = -0.6, size = 1) +
-  geom_tiplab(data = mito_tip_labels, aes(label = label), align = TRUE, size = 2) +
+  geom_tiplab(data = mito_tip_labels, aes(label = label, fill = grepl("JS", label)),
+              label.padding = unit(0.05, "lines"), label.size = 0, label.shape = 4,
+              align = TRUE, size = 1.8, geom = "label") +
+  scale_fill_manual(values = c(NA, "lightpink")) +
+  theme(legend.position="none") +
   geom_treescale(x = 0.4, y = 35, color = "red", fontsize=2.5) +
   xlim_tree(12)
 

@@ -1,46 +1,38 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[
-  11pt,
-]{article}
+\documentclass[11pt,]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
-% Use upquote if available, for straight quotes in verbatim environments
+% use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
 \hypersetup{
-  pdftitle={Complete RNA Virus Genomes Assembled from Murine Cecal Metatranscriptomes},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
+            pdftitle={Complete RNA Virus Genomes Assembled from Murine Cecal Metatranscriptomes},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
 \usepackage[margin=1.0in]{geometry}
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -51,14 +43,31 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-% Set default figure placement to htbp
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
 \usepackage{helvet} % Helvetica font
 \renewcommand*\familydefault{\sfdefault} % Use the sans serif version of the font
 \usepackage[T1]{fontenc}
@@ -72,11 +81,26 @@
 \usepackage{lineno}
 
 \usepackage{pdfpages}
+% https://github.com/rstudio/rmarkdown/issues/337
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+% https://github.com/rstudio/rmarkdown/pull/252
+\usepackage{titling}
+\setlength{\droptitle}{-2em}
+
+\pretitle{\vspace{\droptitle}\centering\huge}
+\posttitle{\par}
+
+\preauthor{\centering\large\emph}
+\postauthor{\par}
+
+\predate{\centering\large\emph}
+\postdate{\par}
 
 \title{\textbf{Complete RNA Virus Genomes Assembled from Murine Cecal
 Metatranscriptomes}}
-\author{}
-\date{\vspace{-2.5em}}
+\date{}
 
 \begin{document}
 \maketitle
@@ -105,10 +129,10 @@ Arbor, MI 48109
 \subsection{Abstract}\label{abstract}}
 
 Efforts to catalog viral diversity in the gut microbiome have largely
-ignored RNA viruses. To address this, we screened assemblies of
-previously published mouse gut metatranscriptomes for the presence of
-RNA viruses. We identified the complete genomes of an Astrovirus and 5
-Mitovirus-like viruses.
+focused on DNA viruses, while RNA viruses remain understudied. To
+address this, we screened assemblies of previously published mouse gut
+metatranscriptomes for the presence of RNA viruses. We identified the
+complete genomes of an Astrovirus and 5 Mitovirus-like viruses.
 
 \newpage
 
@@ -135,13 +159,16 @@ mice were infected with \emph{C. difficile} strain 630. Germ free
 C57Bl/6 mice were also mono-associated with \emph{C. difficile} strain
 630. Cecal contents were removed from each animal 18 hours post
 infection and frozen for RNA extraction and sequencing. RNA sequences
-from each sample were assembled individually using rnaSPAdes v3.13.1 (7)
-and concatenated for dereplication, resulting in 70,779 contigs longer
-than 1 kb. Contigs were then screened against a custom RefSeq database
-of viral RNA-dependent RNA polymerase (RdRP) protein sequences with a
-maximum e-value of 10\textsuperscript{-20}, resulting in 29 contigs.
-RdRP is conserved amongst almost all RNA viruses without a DNA stage in
-genome replication. These contigs were then annotated with Interproscan
+from each sample were trimmed of adapter sequences and low-quality bases
+using Trimmomatic v0.39 and assembled individually using rnaSPAdes
+v3.13.1 (7) and concatenated for dereplication, resulting in 70,779
+contigs longer than 1 kb. Contigs were screened for the presence of RdRP
+coding sequences using Blast v2.9.0 against a database containing all
+Viral RefSeq protein sequences annotated as RdRP (screening database
+available online as described below) with a maximum e-value of
+10\textsuperscript{-20}, resulting in 29 contigs. RdRP is conserved
+amongst almost all RNA viruses without a DNA stage in genome
+replication. These contigs were then annotated with Interproscan
 v5.39-77.0 (8, 9). We constructed phylogenetic trees from RdRP protein
 sequences using IQ-TREE v1.6.12 (10).
 
@@ -150,12 +177,14 @@ sequences originating from most of the mouse treatment groups, including
 germ-free mice. First, a 6,811 base-long astrovirus genome (GC 56.6\%)
 was obtained with 1,683.5-fold coverage (Figure 1A). The genome
 contained 3 predicted open reading frames encoding a capsid, RdRP, and a
-trypsin-like peptidase. Second, 5 distinct, but closely related RNA
-virus genomes ranging in length from 2,309 to 2,447 bases with 4.6 to
-16,078.8-fold coverage and average GC content of 46.2 belonged to a
-previously undescribed clade of Narnaviridae adjacent to the Mitoviruses
-(Figure 1B). These RNA virus genomes will facilitate future studies of
-RNA virus biology in the murine microbiome.
+trypsin-like peptidase, and appears to be closely related to Murine
+Astrovirus in \emph{Astroviridae}. Second, 5 distinct, but closely
+related RNA virus genomes, designated Putative Mitovirus JS1 through
+JS5, ranging in length from 2,309 to 2,447 bases with 4.6 to
+16,078.8-fold coverage and average GC content of 46.2\% belonged to a
+previously undescribed clade of \emph{Narnaviridae} adjacent to the
+Mitoviruses (Figure 1B). These RNA virus genomes will facilitate future
+studies of RNA virus biology in the murine microbiome.
 
 \textbf{Data Availability.} The RNA-seq data are available the NCBI
 Sequence Read Archive (SRA) database under the accession numbers
