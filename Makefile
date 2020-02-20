@@ -40,3 +40,13 @@ submission/manuscript.docx : submission/manuscript.tex
 
 write.paper : submission/manuscript.md\
 				submission/manuscript.tex submission/manuscript.pdf
+
+submission/marked_up.pdf : submission/manuscript.tex
+	git cat-file -p 770644c5bdda47d2ce77066128ed79519c68c1d9:submission/manuscript.tex > submission/manuscript_old.tex
+	latexdiff submission/manuscript_old.tex submission/manuscript.tex > submission/marked_up.tex
+	pdflatex -output-directory=submission submission/marked_up.tex
+	rm submission/marked_up.aux
+	rm submission/marked_up.log
+	rm submission/marked_up.out
+	rm submission/marked_up.tex
+	rm submission/manuscript_old.tex
