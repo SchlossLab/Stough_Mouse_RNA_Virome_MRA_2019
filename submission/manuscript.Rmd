@@ -1,5 +1,5 @@
 ---
-title: "**Complete RNA Virus Genomes Assembled from Murine Cecal Metatranscriptomes**"
+title: "**Coding-complete RNA virus genomes assembled from murine cecal metatranscriptomes**"
 bibliography: references.bib
 output:
   pdf_document:
@@ -72,7 +72,7 @@ Department of Microbiology and Immunology, University of Michigan, Ann Arbor, MI
 
 ## Abstract
 
-Efforts to catalog viral diversity in the gut microbiome have largely focused on DNA viruses, while RNA viruses remain understudied. To address this, we screened assemblies of previously published mouse gut metatranscriptomes for the presence of RNA viruses. We identified the complete genomes of an Astrovirus and 5 Mitovirus-like viruses.
+Efforts to catalog viral diversity in the gut microbiome have largely focused on DNA viruses, while RNA viruses remain understudied. To address this, we screened assemblies of previously published mouse gut metatranscriptomes for the presence of RNA viruses. We identified the coding-complete genomes of an Astrovirus and 5 Mitovirus-like viruses.
 
 \newpage
 
