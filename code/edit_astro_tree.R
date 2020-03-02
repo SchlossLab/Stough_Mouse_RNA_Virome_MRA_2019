@@ -11,8 +11,11 @@ astro_tree_data <- ggtree(midpoint_astro_tree)
 astro_tree_table <- astro_tree_data$data
 
 astro_tip_labels <- astro_tree_data %>% filter(isTip == TRUE) %>%
-  mutate(label = str_replace_all(label, pattern = "_", replacement = " "))
-
+  mutate(label = str_replace_all(label, pattern = "_", replacement = " ")) %>% 
+  mutate(label = str_replace(label, pattern = "Bat astrovirus Tm Guangxi LD71 2007", "Bat astrovirus Tm Guangxi LD71")) %>% 
+  mutate(label = str_replace(label, pattern = "Bat astrovirus Tm Guangxi LD77 2007", "Bat astrovirus Tm Guangxi LD77")) %>%
+  mutate(label = str_replace(label, pattern = "Bat astrovirus Tm Guangxi LD38 2007", "Bat astrovirus Tm Guangxi LD38"))
+  
 astro_node_labels <- astro_tree_data %>% filter(isTip == FALSE) %>%
   mutate(label = as.numeric(label)) %>%
   filter(label >= 50)
